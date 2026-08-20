@@ -25,4 +25,4 @@ Open the `ol_company_editor.lpr` file and build.
 * **BGRA Components** - can be installed from inside the Lazarus IDE using the Online Package Manager.
 
 # ⚖️ Licence
-**OpenLoco Launcher** is licensed under the MIT License.
+**OpenLoco Company Editor** is licensed under the MIT License.
