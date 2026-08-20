@@ -1,0 +1,414 @@
+object frmLanguageStrings: TfrmLanguageStrings
+  Left = 622
+  Height = 531
+  Top = 122
+  Width = 576
+  ActiveControl = edLanguageId0
+  BorderStyle = bsSingle
+  Caption = 'Set language based name...'
+  ClientHeight = 531
+  ClientWidth = 576
+  Position = poMainFormCenter
+  LCLVersion = '4.8.0.0'
+  OnShow = FormShow
+  object btnOk: TButton
+    Left = 374
+    Height = 25
+    Top = 487
+    Width = 91
+    Anchors = [akRight, akBottom]
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object btnCancel: TButton
+    Left = 478
+    Height = 25
+    Top = 487
+    Width = 84
+    Anchors = [akRight, akBottom]
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object Bevel1: TBevel
+    Left = 0
+    Height = 11
+    Top = 463
+    Width = 576
+    Anchors = [akLeft, akRight, akBottom]
+    Shape = bsBottomLine
+  end
+  object Label1: TLabel
+    Left = 10
+    Height = 30
+    Top = 10
+    Width = 556
+    Align = alTop
+    BorderSpacing.Around = 10
+    Caption = 'Set the names you want for what languages you want.'#13#10'For languages left empty, the English (UK) name will be used automatically.'
+    WordWrap = True
+  end
+  object gbMain: TGroupBox
+    Left = 10
+    Height = 408
+    Top = 48
+    Width = 556
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Owner / Company name'
+    ClientHeight = 388
+    ClientWidth = 552
+    TabOrder = 0
+    object Panel1: TPanel
+      Left = 10
+      Height = 22
+      Top = 5
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'English (UK)'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 0
+      object edLanguageId0: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel2: TPanel
+      Left = 10
+      Height = 22
+      Top = 32
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'English (US)'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 1
+      object edLanguageId1: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel3: TPanel
+      Left = 10
+      Height = 22
+      Top = 329
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'ID 12'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 12
+      object edLanguageId12: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel4: TPanel
+      Left = 10
+      Height = 22
+      Top = 302
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'Traditional Chinese'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 11
+      object edLanguageId11: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel5: TPanel
+      Left = 10
+      Height = 22
+      Top = 275
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'Simplified Chinese'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 10
+      object edLanguageId10: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel6: TPanel
+      Left = 10
+      Height = 22
+      Top = 248
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'Koreean'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 9
+      object edLanguageId9: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel7: TPanel
+      Left = 10
+      Height = 22
+      Top = 221
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'Japanese'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 8
+      object edLanguageId8: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel8: TPanel
+      Left = 10
+      Height = 22
+      Top = 194
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'Swedish'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 7
+      object edLanguageId7: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel9: TPanel
+      Left = 10
+      Height = 22
+      Top = 167
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'Dutch'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 6
+      object edLanguageId6: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel10: TPanel
+      Left = 10
+      Height = 22
+      Top = 140
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'Italian'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 5
+      object edLanguageId5: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel11: TPanel
+      Left = 10
+      Height = 22
+      Top = 113
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'Spanish'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 4
+      object edLanguageId4: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel12: TPanel
+      Left = 10
+      Height = 22
+      Top = 86
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'German'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 3
+      object edLanguageId3: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel13: TPanel
+      Left = 10
+      Height = 22
+      Top = 59
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'French'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 2
+      object edLanguageId2: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+    object Panel14: TPanel
+      Left = 10
+      Height = 22
+      Top = 356
+      Width = 532
+      Align = alTop
+      Alignment = taLeftJustify
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      BorderSpacing.Bottom = 5
+      BevelOuter = bvNone
+      Caption = 'Portuguese'
+      ClientHeight = 22
+      ClientWidth = 532
+      TabOrder = 13
+      object edLanguageId13: TEdit
+        Left = 128
+        Height = 22
+        Top = 0
+        Width = 404
+        Align = alRight
+        TabOrder = 0
+      end
+    end
+  end
+end

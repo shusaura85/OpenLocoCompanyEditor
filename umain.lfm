@@ -1,0 +1,1533 @@
+object frmMain: TfrmMain
+  Left = 311
+  Height = 442
+  Top = 112
+  Width = 1280
+  AllowDropFiles = True
+  BorderStyle = bsSingle
+  Caption = 'OpenLoco Company Editor'
+  ClientHeight = 442
+  ClientWidth = 1280
+  Menu = MainMenu1
+  Position = poScreenCenter
+  LCLVersion = '4.8.0.0'
+  OnCreate = FormCreate
+  OnDropFiles = FormDropFiles
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 144
+    Top = 128
+    Width = 137
+    ClientHeight = 124
+    ClientWidth = 133
+    TabOrder = 0
+    object imgHappyLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgHappySmall: TImage
+      Left = 97
+      Height = 24
+      Top = 8
+      Width = 24
+      Proportional = True
+    end
+    object chkEmotionHappy: TCheckBox
+      Left = 8
+      Height = 19
+      Top = -20
+      Width = 53
+      Caption = 'Happy'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 10
+      Height = 25
+      Top = 89
+      Width = 113
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Select image...'
+      TabOrder = 1
+      OnClick = Button2Click
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 9
+    Height = 104
+    Top = 8
+    Width = 568
+    Caption = 'Owner'
+    ClientHeight = 84
+    ClientWidth = 564
+    TabOrder = 1
+    object imgNeutralLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgNeutralSmall: TImage
+      Left = 97
+      Height = 24
+      Top = 7
+      Width = 24
+      Proportional = True
+    end
+    object edOwnerName: TEdit
+      Left = 145
+      Height = 23
+      Top = 8
+      Width = 380
+      TabOrder = 0
+      Text = 'Owner Name'
+    end
+    object Button1: TButton
+      Left = 97
+      Height = 25
+      Top = 47
+      Width = 121
+      Caption = 'Select image...'
+      TabOrder = 1
+      OnClick = Button1Click
+    end
+    object Button10: TButton
+      Left = 525
+      Height = 23
+      Top = 8
+      Width = 27
+      Caption = '...'
+      TabOrder = 2
+      OnClick = Button10Click
+    end
+    object chkUseDifferentLanguageNames: TCheckBox
+      Left = 377
+      Height = 19
+      Hint = 'If not checked, the same name will be used for all languages'
+      Top = 56
+      Width = 175
+      Alignment = taLeftJustify
+      Anchors = [akTop, akRight]
+      Caption = 'Use different language names'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 152
+    Height = 144
+    Top = 128
+    Width = 137
+    ClientHeight = 124
+    ClientWidth = 133
+    TabOrder = 2
+    object imgWorriedLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgWorriedSmall: TImage
+      Left = 97
+      Height = 24
+      Top = 8
+      Width = 24
+      Proportional = True
+    end
+    object chkEmotionWorried: TCheckBox
+      Left = 8
+      Height = 19
+      Top = -20
+      Width = 60
+      Caption = 'Worried'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Button3: TButton
+      Left = 10
+      Height = 25
+      Top = 89
+      Width = 113
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Select image...'
+      TabOrder = 1
+      OnClick = Button3Click
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 296
+    Height = 144
+    Top = 128
+    Width = 137
+    ClientHeight = 124
+    ClientWidth = 133
+    TabOrder = 3
+    object imgThinkingLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgThinkingSmall: TImage
+      Left = 97
+      Height = 24
+      Top = 8
+      Width = 24
+      Proportional = True
+    end
+    object chkEmotionThinking: TCheckBox
+      Left = 8
+      Height = 19
+      Top = -20
+      Width = 64
+      Caption = 'Thinking'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Button4: TButton
+      Left = 10
+      Height = 25
+      Top = 89
+      Width = 113
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Select image...'
+      TabOrder = 1
+      OnClick = Button4Click
+    end
+  end
+  object GroupBox5: TGroupBox
+    Left = 440
+    Height = 144
+    Top = 128
+    Width = 137
+    ClientHeight = 124
+    ClientWidth = 133
+    TabOrder = 4
+    object imgDejectedLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgDejectedSmall: TImage
+      Left = 97
+      Height = 24
+      Top = 8
+      Width = 24
+      Proportional = True
+    end
+    object chkEmotionDejected: TCheckBox
+      Left = 8
+      Height = 19
+      Top = -20
+      Width = 64
+      Caption = 'Dejected'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Button5: TButton
+      Left = 10
+      Height = 25
+      Top = 89
+      Width = 113
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Select image...'
+      TabOrder = 1
+      OnClick = Button5Click
+    end
+  end
+  object GroupBox6: TGroupBox
+    Left = 8
+    Height = 144
+    Top = 288
+    Width = 137
+    ClientHeight = 124
+    ClientWidth = 133
+    TabOrder = 5
+    object imgSurprisedLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgSurprisedSmall: TImage
+      Left = 97
+      Height = 24
+      Top = 8
+      Width = 24
+      Proportional = True
+    end
+    object chkEmotionSurprised: TCheckBox
+      Left = 8
+      Height = 19
+      Top = -20
+      Width = 67
+      Caption = 'Surprised'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Button6: TButton
+      Left = 10
+      Height = 25
+      Top = 89
+      Width = 113
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Select image...'
+      TabOrder = 1
+      OnClick = Button6Click
+    end
+  end
+  object GroupBox7: TGroupBox
+    Left = 152
+    Height = 144
+    Top = 288
+    Width = 137
+    ClientHeight = 124
+    ClientWidth = 133
+    TabOrder = 6
+    object imgScaredLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgScaredSmall: TImage
+      Left = 97
+      Height = 24
+      Top = 8
+      Width = 24
+      Proportional = True
+    end
+    object chkEmotionScared: TCheckBox
+      Left = 8
+      Height = 19
+      Top = -20
+      Width = 53
+      Caption = 'Scared'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Button7: TButton
+      Left = 10
+      Height = 25
+      Top = 89
+      Width = 113
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Select image...'
+      TabOrder = 1
+      OnClick = Button7Click
+    end
+  end
+  object GroupBox8: TGroupBox
+    Left = 296
+    Height = 144
+    Top = 288
+    Width = 137
+    ClientHeight = 124
+    ClientWidth = 133
+    TabOrder = 7
+    object imgAngryLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgAngrySmall: TImage
+      Left = 97
+      Height = 24
+      Top = 8
+      Width = 24
+      Proportional = True
+    end
+    object chkEmotionAngry: TCheckBox
+      Left = 8
+      Height = 19
+      Top = -20
+      Width = 50
+      Caption = 'Angry'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Button8: TButton
+      Left = 10
+      Height = 25
+      Top = 89
+      Width = 113
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Select image...'
+      TabOrder = 1
+      OnClick = Button8Click
+    end
+  end
+  object GroupBox9: TGroupBox
+    Left = 439
+    Height = 144
+    Top = 288
+    Width = 137
+    ClientHeight = 124
+    ClientWidth = 133
+    TabOrder = 8
+    object imgDisgustedLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgDisgustedSmall: TImage
+      Left = 98
+      Height = 24
+      Top = 8
+      Width = 24
+      Proportional = True
+    end
+    object chkEmotionDisgusted: TCheckBox
+      Left = 8
+      Height = 19
+      Top = -20
+      Width = 70
+      Caption = 'Disgusted'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object Button9: TButton
+      Left = 10
+      Height = 25
+      Top = 89
+      Width = 113
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Select image...'
+      TabOrder = 1
+      OnClick = Button9Click
+    end
+  end
+  object GroupBox10: TGroupBox
+    Left = 584
+    Height = 424
+    Top = 8
+    Width = 192
+    Caption = 'Company name'
+    ClientHeight = 404
+    ClientWidth = 188
+    TabOrder = 9
+    object chkNamePrefix1: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 5
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Ebony'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object chkNamePrefix2: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 29
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Silver'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+    object chkNamePrefix3: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 53
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Ivory'
+      Checked = True
+      State = cbChecked
+      TabOrder = 2
+    end
+    object chkNamePrefix5: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 101
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Sapphire'
+      Checked = True
+      State = cbChecked
+      TabOrder = 3
+    end
+    object chkNamePrefix6: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 125
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Emerald'
+      Checked = True
+      State = cbChecked
+      TabOrder = 4
+    end
+    object chkNamePrefix7: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 149
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Golden'
+      Checked = True
+      State = cbChecked
+      TabOrder = 5
+    end
+    object chkNamePrefix8: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 173
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Amber'
+      Checked = True
+      State = cbChecked
+      TabOrder = 6
+    end
+    object chkNamePrefix13: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 293
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Company name'
+      Checked = True
+      Font.Style = [fsItalic]
+      ParentFont = False
+      State = cbChecked
+      TabOrder = 7
+    end
+    object chkNamePrefix12: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 269
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Town Name *'
+      Checked = True
+      Font.Style = [fsItalic]
+      ParentFont = False
+      State = cbChecked
+      TabOrder = 8
+    end
+    object chkNamePrefix11: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 245
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Scarlet'
+      Checked = True
+      State = cbChecked
+      TabOrder = 9
+    end
+    object chkNamePrefix10: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 221
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Burgundy'
+      Checked = True
+      State = cbChecked
+      TabOrder = 10
+    end
+    object chkNamePrefix9: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 197
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Bronze'
+      Checked = True
+      State = cbChecked
+      TabOrder = 11
+    end
+    object chkNamePrefix4: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 77
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Indigo'
+      Checked = True
+      State = cbChecked
+      TabOrder = 12
+    end
+    object edCompanyName: TEdit
+      Left = 21
+      Height = 23
+      Top = 315
+      Width = 130
+      TabOrder = 13
+      Text = 'Company'
+    end
+    object Label9: TLabel
+      Left = 9
+      Height = 15
+      Top = 349
+      Width = 158
+      Caption = '* uses an in-game town name'
+    end
+    object Button13: TButton
+      Left = 151
+      Height = 23
+      Top = 315
+      Width = 27
+      Caption = '...'
+      TabOrder = 14
+      OnClick = Button13Click
+    end
+    object Button11: TButton
+      Left = 10
+      Height = 25
+      Top = 369
+      Width = 168
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Toggle all'
+      TabOrder = 15
+      OnClick = Button11Click
+    end
+  end
+  object GroupBox11: TGroupBox
+    Left = 784
+    Height = 424
+    Top = 8
+    Width = 192
+    Caption = 'Company name suffix'
+    ClientHeight = 404
+    ClientWidth = 188
+    TabOrder = 10
+    object chkNameSuffix1: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 5
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Transport'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object chkNameSuffix2: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 29
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Express'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+    object chkNameSuffix3: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 53
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Lines'
+      Checked = True
+      State = cbChecked
+      TabOrder = 2
+    end
+    object chkNameSuffix5: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 101
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Coaches'
+      Checked = True
+      State = cbChecked
+      TabOrder = 3
+    end
+    object chkNameSuffix6: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 125
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Air'
+      Checked = True
+      State = cbChecked
+      TabOrder = 4
+    end
+    object chkNameSuffix7: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 149
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Rail'
+      Checked = True
+      State = cbChecked
+      TabOrder = 5
+    end
+    object chkNameSuffix8: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 173
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Carts'
+      Checked = True
+      State = cbChecked
+      TabOrder = 6
+    end
+    object chkNameSuffix13: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 293
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Trucks'
+      Checked = True
+      State = cbChecked
+      TabOrder = 7
+    end
+    object chkNameSuffix12: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 269
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Freight'
+      Checked = True
+      State = cbChecked
+      TabOrder = 8
+    end
+    object chkNameSuffix11: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 245
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Shipping'
+      Checked = True
+      State = cbChecked
+      TabOrder = 9
+    end
+    object chkNameSuffix10: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 221
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Haulage'
+      Checked = True
+      State = cbChecked
+      TabOrder = 10
+    end
+    object chkNameSuffix9: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 197
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Trains'
+      Checked = True
+      State = cbChecked
+      TabOrder = 11
+    end
+    object chkNameSuffix4: TCheckBox
+      Left = 5
+      Height = 19
+      Top = 77
+      Width = 178
+      Align = alTop
+      AutoSize = False
+      BorderSpacing.Around = 5
+      Caption = 'Tracks'
+      Checked = True
+      State = cbChecked
+      TabOrder = 12
+    end
+    object Button12: TButton
+      Left = 10
+      Height = 25
+      Top = 369
+      Width = 168
+      Align = alBottom
+      BorderSpacing.Around = 10
+      Caption = 'Toggle all'
+      TabOrder = 13
+      OnClick = Button12Click
+    end
+  end
+  object GroupBox12: TGroupBox
+    Left = 1000
+    Height = 240
+    Top = 8
+    Width = 272
+    Caption = 'Competitor Specifications'
+    ClientHeight = 220
+    ClientWidth = 268
+    TabOrder = 11
+    object tbIntelligence: TTrackBar
+      Left = 12
+      Height = 40
+      Top = 24
+      Width = 240
+      Max = 9
+      Min = 1
+      Position = 1
+      ShowSelRange = False
+      TickMarks = tmBoth
+      OnChange = tbIntelligenceChange
+      TabOrder = 0
+    end
+    object Label1: TLabel
+      Left = 12
+      Height = 15
+      Top = 6
+      Width = 61
+      Caption = 'Intelligence'
+    end
+    object Label2: TLabel
+      Left = 12
+      Height = 15
+      Top = 77
+      Width = 80
+      Caption = 'Aggressiveness'
+    end
+    object Label3: TLabel
+      Left = 12
+      Height = 15
+      Top = 149
+      Width = 88
+      Caption = 'Competitiveness'
+    end
+    object tbAggressiveness: TTrackBar
+      Left = 12
+      Height = 40
+      Top = 95
+      Width = 240
+      Max = 9
+      Min = 1
+      Position = 4
+      ShowSelRange = False
+      TickMarks = tmBoth
+      OnChange = tbAggressivenessChange
+      TabOrder = 1
+    end
+    object tbCompetitiveness: TTrackBar
+      Left = 12
+      Height = 40
+      Top = 167
+      Width = 240
+      Max = 9
+      Min = 1
+      Position = 8
+      ShowSelRange = False
+      TickMarks = tmBoth
+      OnChange = tbCompetitivenessChange
+      TabOrder = 2
+    end
+    object lblIntelligenceValue: TLabel
+      Left = 213
+      Height = 15
+      Top = 6
+      Width = 39
+      Alignment = taRightJustify
+      Anchors = [akTop, akRight]
+      Caption = 'Low (1)'
+    end
+    object lblAggressivenessValue: TLabel
+      Left = 190
+      Height = 15
+      Top = 77
+      Width = 62
+      Alignment = taRightJustify
+      Anchors = [akTop, akRight]
+      Caption = 'Medium (4)'
+    end
+    object lblCompetitivenessValue: TLabel
+      Left = 211
+      Height = 15
+      Top = 149
+      Width = 43
+      Alignment = taRightJustify
+      Anchors = [akTop, akRight]
+      Caption = 'High (8)'
+    end
+  end
+  object Label7: TLabel
+    Left = 1000
+    Height = 15
+    Top = 256
+    Width = 49
+    Caption = 'Object ID'
+  end
+  object edObjectID: TEdit
+    Left = 1000
+    Height = 29
+    Top = 272
+    Width = 262
+    CharCase = ecUppercase
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Lucida Console'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 8
+    ParentFont = False
+    TabOrder = 12
+  end
+  object Label8: TLabel
+    Left = 1000
+    Height = 32
+    Top = 304
+    Width = 262
+    AutoSize = False
+    Caption = 'Max 8 chars. Initial ID is auto generated based on date and time with "CE" prefix.'
+    WordWrap = True
+  end
+  object selObjectSource: TComboBox
+    Left = 1000
+    Height = 23
+    Top = 361
+    Width = 262
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'Custom'
+      'OpenLoco'
+      'Vanilla'
+    )
+    Style = csDropDownList
+    TabOrder = 13
+    Text = 'Custom'
+  end
+  object Label10: TLabel
+    Left = 1000
+    Height = 15
+    Top = 344
+    Width = 74
+    Caption = 'Object Source'
+  end
+  object edChecksum: TEdit
+    Left = 1000
+    Height = 23
+    Top = 409
+    Width = 125
+    ReadOnly = True
+    TabOrder = 14
+  end
+  object Label11: TLabel
+    Left = 1000
+    Height = 15
+    Top = 392
+    Width = 59
+    Caption = 'Checksum:'
+  end
+  object edChecksumHex: TEdit
+    Left = 1137
+    Height = 23
+    Top = 409
+    Width = 125
+    ReadOnly = True
+    TabOrder = 15
+  end
+  object Label12: TLabel
+    Left = 1136
+    Height = 15
+    Top = 392
+    Width = 84
+    Caption = 'Checksum HEX:'
+  end
+  object MainMenu1: TMainMenu
+    Images = ImageList1
+    Left = 72
+    object MenuItem1: TMenuItem
+      AutoCheck = True
+      Caption = 'File'
+      object MenuItem2: TMenuItem
+        Caption = '&New'
+        ImageIndex = 1
+        ShortCut = 16462
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = '&Open'
+        ImageIndex = 2
+        ShortCut = 16463
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = '&Save'
+        ImageIndex = 3
+        ShortCut = 16467
+        OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Save &as'
+        ImageIndex = 4
+        ShortCut = 49235
+        OnClick = MenuItem5Click
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'E&xit'
+        ImageIndex = 0
+        ShortCut = 16472
+        OnClick = MenuItem6Click
+      end
+    end
+    object MenuItem7: TMenuItem
+      Caption = '&Help'
+      object MenuItem9: TMenuItem
+        Caption = 'Go to website...'
+        ImageIndex = 6
+        OnClick = MenuItem9Click
+      end
+      object Separator2: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem8: TMenuItem
+        Caption = '&About'
+        ImageIndex = 5
+        OnClick = MenuItem8Click
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Competitor object (*.dat)|*.dat|All files (*.*)|*.*'
+    Left = 158
+    Top = 3
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.dat'
+    Filter = 'Competitor object (*.dat)|*.dat'
+    Options = [ofPathMustExist, ofEnableSizing, ofViewDetail]
+    Left = 246
+    Top = 3
+  end
+  object ImageList1: TImageList
+    Left = 471
+    Top = 6
+    Bitmap = {
+      4C7A070000001000000010000000AD0200000000000078DAED994D4855411886
+      8FD2E2E24A22DD889B5A182EB24592D0252A89A095924A412D0A5B2488B48AC8
+      084252338B0221A348DC988A2D2AA485602151048106F6232D6A11416D941021
+      A9EBF771DF03C330FFE71AFD9C0F1EEEB933F39E993333EFCC997BA3A8609121
+      8688271A3A2DFA7A2267D073DE5E83BE096574F186A835E4375BF4B670D1CF13
+      2713E82FA14CBB83FE96A61F3FA2DC6D8BFEA646FF9E5871D0ABA2C7A3FDAAF8
+      44B4AED3F8D9E6CF02B1C3909F7598BFBB0CFA62A2CBE29FA2E8CF8E4E45BB67
+      887E07ED3E4DFFBD43FA74A0FFE274DB3D74FA2641CF4C7ACE1F5E7356A57BEC
+      0C987F71FC44D9D0F99F43D9545F58BDCDFFB675C0E6FFBF611D48FD5F58FF97
+      26F07F1BF18DA816DEAF5CE7FF11A1AD5F317EF73CF465C45BE999C73DFDC7F7
+      F822E8473DF56713D69FFA3FF5FFFFBEFFE73469EBADAF239605FDB2D067AEF5
+      EFC6396505DE0C69FF0161DD4CFD1FE6FF5962D0C3FF32AFF079C5D1FF3263C4
+      055C5F0CD0C7FBC6357C3F6FF1BFCC4B6203CAF423EDB8875EE61771CCA3FD2A
+      9A1DF5B28F7F97FE395122E4F1F50BCFFA9FE237A90CF6A090F63F26A61CDB9F
+      F5E8FF7FCDFF15C4B043DB631E4ABFC50DE23DD355CF650704FDB8E0539790CB
+      EBF4DD20543F0642F54741A83EE9F3778150FD6660D38F02F6D01E07F83D6E44
+      D2E73CF88E338E384E9C7E2A70FE9F203AA2346EC0CBDB1479DB91775DA32D17
+      C6E707F19A580273D23BF426837E3FCE7E978906D0479C210EA2CC4685BE0579
+      5B0DCF578D328734CFFECCA18F786FBBAA48BF8B75D1168F883B8AF47351FEFF
+      055B2CA07FE4A8C2D9A2D1A06DC1D86C91D2F9AC5E897EE6FEB98FF116C77E02
+      79BD8AFBF29C5884B7B9FE0F51FE7F8A383EA3DD0D9A7665B026F039E134EA1F
+      91FC3D6CE9177E8607C21C9B0F5C5F6BB0474D26589F79CD3F6CF85EB058032A
+      4FFF39
+    }
+  end
+  object PopupNotifier1: TPopupNotifier
+    Color = 34
+    Icon.Data = {
+      07544269746D617036300000424D363000000000000036000000280000004000
+      0000400000000100180000000000003000006400000064000000000000000000
+      000033262E33262E33262E3642643642643642641D131A1D131A1D131A251D2D
+      251D2D251D2D2E293B2E293B2E293B281F2B281F2B281F2B8189A18189A18189
+      A1413FB1413FB1413FB12F25862F25862F2586777B90777B90777B90382F3738
+      2F37382F3734272C34272C34272C2B1F232B1F232B1F23201415201415201415
+      2C1F202C1F202C1F20281A1B281A1B281A1B2314142314142314141F10111F10
+      111F10112011122011122011121D0E0C1D0E0C1D0E0C25141125141125141132
+      252C33283133283133283135364F35364F35364F2218242218242218242B2941
+      2B29412B2941302E45302E45302E4529212E29212E29212E90A1B890A1B890A1
+      B85D67C75D67C75D67C7332EA5332EA5332EA56E708E6E708E6E708E5E626F5E
+      626F5E626F383038383038383038372D32372D32372D32221719221719221719
+      3024263024263024263326293326293326292C1E202C1E202C1E202617192617
+      1926171924151424151424151423131123131123131121121221121221121232
+      262D33283133283133283135364F35364F35364F2218242218242218242B2941
+      2B29412B2941302E45302E45302E4529212E29212E29212E90A1B890A1B890A1
+      B85D67C75D67C75D67C7332EA5332EA5332EA56E708E6E708E6E708E5E626F5E
+      626F5E626F383038383038383038372D32372D32372D32221719221719221719
+      3024263024263024263326293326293326292C1E202C1E202C1E202617192617
+      1926171924151424151424151423131123131123131121121221121221121232
+      262D33283133283133283135364F35364F35364F2218242218242218242B2941
+      2B29412B2941302E45302E45302E4529212E29212E29212E90A1B890A1B890A1
+      B85D67C75D67C75D67C7332EA5332EA5332EA56E708E6E708E6E708E5E626F5E
+      626F5E626F383038383038383038372D32372D32372D32221719221719221719
+      3024263024263024263326293326293326292C1E202C1E202C1E202617192617
+      1926171924151424151424151423131123131123131121121221121221121232
+      262D342A36342A36342A3635344D35344D35344D2A24382A24382A2438303454
+      3034543034543336553336553336552A24362A24362A243691A5BC91A5BC91A5
+      BC8BA6DC8BA6DC8BA6DC3532B63532B63532B66261856261856261859DB6C89D
+      B6C89DB6C83E39453E39453E39453D363F3D363F3D363F3B33393B33393B3339
+      211416211416211416322729322729322729362A2D362A2D362A2D2F22242F22
+      242F22242516162516162516161E0F0D1E0F0D1E0F0D33201C33201C33201C33
+      2731342A36342A36342A3635344D35344D35344D2A24382A24382A2438303454
+      3034543034543336553336553336552A24362A24362A243691A5BC91A5BC91A5
+      BC8BA6DC8BA6DC8BA6DC3532B63532B63532B66261856261856261859DB6C89D
+      B6C89DB6C83E39453E39453E39453D363F3D363F3D363F3B33393B33393B3339
+      211416211416211416322729322729322729362A2D362A2D362A2D2F22242F22
+      242F22242516162516162516161E0F0D1E0F0D1E0F0D33201C33201C33201C33
+      2731342A36342A36342A3635344D35344D35344D2A24382A24382A2438303454
+      3034543034543336553336553336552A24362A24362A243691A5BC91A5BC91A5
+      BC8BA6DC8BA6DC8BA6DC3532B63532B63532B66261856261856261859DB6C89D
+      B6C89DB6C83E39453E39453E39453D363F3D363F3D363F3B33393B33393B3339
+      211416211416211416322729322729322729362A2D362A2D362A2D2F22242F22
+      242F22242516162516162516161E0F0D1E0F0D1E0F0D33201C33201C33201C33
+      2731352C3A352C3A352C3A393D59393D59393D592E2F4A2E2F4A2E2F4A333D63
+      333D63333D63343D65343D65343D652F32512F32512F32517885997885997885
+      99A5C4DEA5C4DEA5C4DE3C418B3C418B3C418B42355542355542355594A6BE94
+      A6BE94A6BE4D49594D49594D49593F39433F39433F39433F37403F37403F3740
+      372C32372C32372C32372C2F372C2F372C2F3B31343B31343B3134382C2F382C
+      2F382C2F3123243123243123241F110E1F110E1F110E2C1A152C1A152C1A1534
+      2934352C3A352C3A352C3A393D59393D59393D592E2F4A2E2F4A2E2F4A333D63
+      333D63333D63343D65343D65343D652F32512F32512F32517885997885997885
+      99A5C4DEA5C4DEA5C4DE3C418B3C418B3C418B42355542355542355594A6BE94
+      A6BE94A6BE4D49594D49594D49593F39433F39433F39433F37403F37403F3740
+      372C32372C32372C32372C2F372C2F372C2F3B31343B31343B3134382C2F382C
+      2F382C2F3123243123243123241F110E1F110E1F110E2C1A152C1A152C1A1534
+      2934352C3A352C3A352C3A393D59393D59393D592E2F4A2E2F4A2E2F4A333D63
+      333D63333D63343D65343D65343D652F32512F32512F32517885997885997885
+      99A5C4DEA5C4DEA5C4DE3C418B3C418B3C418B42355542355542355594A6BE94
+      A6BE94A6BE4D49594D49594D49593F39433F39433F39433F37403F37403F3740
+      372C32372C32372C32372C2F372C2F372C2F3B31343B31343B3134382C2F382C
+      2F382C2F3123243123243123241F110E1F110E1F110E2C1A152C1A152C1A1534
+      2934352E3E352E3E352E3E38374F38374F38374F323C5F323C5F323C5F32385B
+      32385B32385B34406B34406B34406B34406D34406D34406D403B4E403B4E403B
+      4E626782626782626782372F89372F89372F892D20662D20662D206657536857
+      5368575368717888717888717888383038383038383038352B31352B31352B31
+      291D1F291D1F291D1F3F35383F35383F35383F34363F34363F34363D32333D32
+      333D323335272735272735272728191828191828191826151326151326151335
+      2A37352E3E352E3E352E3E38374F38374F38374F323C5F323C5F323C5F32385B
+      32385B32385B34406B34406B34406B34406D34406D34406D403B4E403B4E403B
+      4E626782626782626782372F89372F89372F892D20662D20662D206657536857
+      5368575368717888717888717888383038383038383038352B31352B31352B31
+      291D1F291D1F291D1F3F35383F35383F35383F34363F34363F34363D32333D32
+      333D323335272735272735272728191828191828191826151326151326151335
+      2A37352E3E352E3E352E3E38374F38374F38374F323C5F323C5F323C5F32385B
+      32385B32385B34406B34406B34406B34406D34406D34406D403B4E403B4E403B
+      4E626782626782626782372F89372F89372F892D20662D20662D206657536857
+      5368575368717888717888717888383038383038383038352B31352B31352B31
+      291D1F291D1F291D1F3F35383F35383F35383F34363F34363F34363D32333D32
+      333D323335272735272735272728191828191828191826151326151326151335
+      2A3737304337304337304337344B37344B37344B3E56823E56823E56823A4E78
+      3A4E783A4E7831385E31385E31385E374E86374E86374E862421362421362421
+      3690AFC790AFC790AFC73B397B3B397B3B397B362D6F362D6F362D6FA0B8CBA0
+      B8CBA0B8CB909BAD909BAD909BAD483E47483E47483E4734282C34282C34282C
+      261717261717261717291B1A291B1A291B1A3225243225243225242A19172A19
+      172A191738261F38261F38261F40313040313040313032283232283232283236
+      2D3B37304337304337304337344B37344B37344B3E56823E56823E56823A4E78
+      3A4E783A4E7831385E31385E31385E374E86374E86374E862421362421362421
+      3690AFC790AFC790AFC73B397B3B397B3B397B362D6F362D6F362D6FA0B8CBA0
+      B8CBA0B8CB909BAD909BAD909BAD483E47483E47483E4734282C34282C34282C
+      261717261717261717291B1A291B1A291B1A3225243225243225242A19172A19
+      172A191738261F38261F38261F40313040313040313032283232283232283236
+      2D3B37304337304337304337344B37344B37344B3E56823E56823E56823A4E78
+      3A4E783A4E7831385E31385E31385E374E86374E86374E862421362421362421
+      3690AFC790AFC790AFC73B397B3B397B3B397B362D6F362D6F362D6FA0B8CBA0
+      B8CBA0B8CB909BAD909BAD909BAD483E47483E47483E4734282C34282C34282C
+      261717261717261717291B1A291B1A291B1A3225243225243225242A19172A19
+      172A191738261F38261F38261F40313040313040313032283232283232283236
+      2D3B37314537314537314538354D38354D38354D393A55393A55393A553D4568
+      3D45683D4568435D89435D89435D8945679D45679D45679D33446F33446F3344
+      6F708A9E708A9E708A9E5E72A95E72A95E72A94E6FBD4E6FBD4E6FBD60678C60
+      678C60678C6E64706E64706E647064565E64565E64565E221312221312221312
+      1F0F0E1F0F0E1F0F0E34221C34221C34221C4C403F4C403F4C403F4F48544F48
+      544F48543D3C553D3C553D3C5538354B38354B38354B37314437314437314437
+      2F3E37314537314537314538354D38354D38354D393A55393A55393A553D4568
+      3D45683D4568435D89435D89435D8945679D45679D45679D33446F33446F3344
+      6F708A9E708A9E708A9E5E72A95E72A95E72A94E6FBD4E6FBD4E6FBD60678C60
+      678C60678C6E64706E64706E647064565E64565E64565E221312221312221312
+      1F0F0E1F0F0E1F0F0E34221C34221C34221C4C403F4C403F4C403F4F48544F48
+      544F48543D3C553D3C553D3C5538354B38354B38354B37314437314437314437
+      2F3E37314537314537314538354D38354D38354D393A55393A55393A553D4568
+      3D45683D4568435D89435D89435D8945679D45679D45679D33446F33446F3344
+      6F708A9E708A9E708A9E5E72A95E72A95E72A94E6FBD4E6FBD4E6FBD60678C60
+      678C60678C6E64706E64706E647064565E64565E64565E221312221312221312
+      1F0F0E1F0F0E1F0F0E34221C34221C34221C4C403F4C403F4C403F4F48544F48
+      544F48543D3C553D3C553D3C5538354B38354B38354B37314437314437314437
+      2F3E37324737324737324738364F38364F38364F3A3B583A3B583A3B583B3F60
+      3B3F603B3F603C43673C43673C43673E476F3E476F3E476F4663964663964663
+      96557491557491557491425990425990425990333E72333E72333E72241D4824
+      1D48241D4839315539315539315564555D64555D64555D312121312121312121
+      42363A42363A42363A464D70464D70464D703D44683D44683D44683C3F603C3F
+      603C3F603A3B573A3B573A3B5739364E39364E39364E37324637324637324637
+      2F3F37324737324737324738364F38364F38364F3A3B583A3B583A3B583B3F60
+      3B3F603B3F603C43673C43673C43673E476F3E476F3E476F4663964663964663
+      96557491557491557491425990425990425990333E72333E72333E72241D4824
+      1D48241D4839315539315539315564555D64555D64555D312121312121312121
+      42363A42363A42363A464D70464D70464D703D44683D44683D44683C3F603C3F
+      603C3F603A3B573A3B573A3B5739364E39364E39364E37324637324637324637
+      2F3F37324737324737324738364F38364F38364F3A3B583A3B583A3B583B3F60
+      3B3F603B3F603C43673C43673C43673E476F3E476F3E476F4663964663964663
+      96557491557491557491425990425990425990333E72333E72333E72241D4824
+      1D48241D4839315539315539315564555D64555D64555D312121312121312121
+      42363A42363A42363A464D70464D70464D703D44683D44683D44683C3F603C3F
+      603C3F603A3B573A3B573A3B5739364E39364E39364E37324637324637324637
+      2F3F3733483733483733483937503937503937503A3B593A3B593A3B593C4061
+      3C40613C40613C43683C43683C43683E476F3E476F3E476F3F4A753F4A753F4A
+      754867984867984867986391D26391D26391D2658AC7658AC7658AC745538845
+      53884553882820442820442820443931543931543931543F30323F30323F3032
+      4C516E4C516E4C516E3F48713F48713F48713D446A3D446A3D446A3C40623C40
+      623C40623A3B593A3B593A3B5939375039375039375037324637324637324637
+      30403733483733483733483937503937503937503A3B593A3B593A3B593C4061
+      3C40613C40613C43683C43683C43683E476F3E476F3E476F3F4A753F4A753F4A
+      754867984867984867986391D26391D26391D2658AC7658AC7658AC745538845
+      53884553882820442820442820443931543931543931543F30323F30323F3032
+      4C516E4C516E4C516E3F48713F48713F48713D446A3D446A3D446A3C40623C40
+      623C40623A3B593A3B593A3B5939375039375039375037324637324637324637
+      30403733483733483733483937503937503937503A3B593A3B593A3B593C4061
+      3C40613C40613C43683C43683C43683E476F3E476F3E476F3F4A753F4A753F4A
+      754867984867984867986391D26391D26391D2658AC7658AC7658AC745538845
+      53884553882820442820442820443931543931543931543F30323F30323F3032
+      4C516E4C516E4C516E3F48713F48713F48713D446A3D446A3D446A3C40623C40
+      623C40623A3B593A3B593A3B5939375039375039375037324637324637324637
+      30403733483733483733483937503937503937503A3C593A3C593A3C593C4062
+      3C40623C40623D44693D44693D44693F48703F48703F48703F4B763F4B763F4B
+      765A8EC85A8EC85A8EC8455FBB455FBB455FBB4353AB4353AB4353AB5166AA51
+      66AA5166AA434A81434A81434A81362E51362E51362E51464C6F464C6F464C6F
+      404C77404C77404C773F49723F49723F49723D456A3D456A3D456A3C40623C40
+      623C40623B3C593B3C593B3C5939375039375039375037324737324737324736
+      30413733483733483733483937503937503937503A3C593A3C593A3C593C4062
+      3C40623C40623D44693D44693D44693F48703F48703F48703F4B763F4B763F4B
+      765A8EC85A8EC85A8EC8455FBB455FBB455FBB4353AB4353AB4353AB5166AA51
+      66AA5166AA434A81434A81434A81362E51362E51362E51464C6F464C6F464C6F
+      404C77404C77404C773F49723F49723F49723D456A3D456A3D456A3C40623C40
+      623C40623B3C593B3C593B3C5939375039375039375037324737324737324736
+      30413733483733483733483937503937503937503A3C593A3C593A3C593C4062
+      3C40623C40623D44693D44693D44693F48703F48703F48703F4B763F4B763F4B
+      765A8EC85A8EC85A8EC8455FBB455FBB455FBB4353AB4353AB4353AB5166AA51
+      66AA5166AA434A81434A81434A81362E51362E51362E51464C6F464C6F464C6F
+      404C77404C77404C773F49723F49723F49723D456A3D456A3D456A3C40623C40
+      623C40623B3C593B3C593B3C5939375039375039375037324737324737324736
+      30413733483733483733483837503837503837503A3B583A3B583A3B583C4061
+      3C40613C40613C44683C44683C44683F476E3F476E3F476E4559844559844559
+      846BA7E86BA7E86BA7E8506FC0506FC0506FC04D60AD4D60AD4D60AD6385C563
+      85C56385C54C5C9C4C5C9C4C5C9C454574454574454574444E79444E79444E79
+      3F4B763F4B763F4B763F48723F48723F48723D446A3D446A3D446A3C40613C40
+      613C40613A3B593A3B593A3B5939364F39364F39364F37324737324737324736
+      30413733483733483733483837503837503837503A3B583A3B583A3B583C4061
+      3C40613C40613C44683C44683C44683F476E3F476E3F476E4559844559844559
+      846BA7E86BA7E86BA7E8506FC0506FC0506FC04D60AD4D60AD4D60AD6385C563
+      85C56385C54C5C9C4C5C9C4C5C9C454574454574454574444E79444E79444E79
+      3F4B763F4B763F4B763F48723F48723F48723D446A3D446A3D446A3C40613C40
+      613C40613A3B593A3B593A3B5939364F39364F39364F37324737324737324736
+      30413733483733483733483837503837503837503A3B583A3B583A3B583C4061
+      3C40613C40613C44683C44683C44683F476E3F476E3F476E4559844559844559
+      846BA7E86BA7E86BA7E8506FC0506FC0506FC04D60AD4D60AD4D60AD6385C563
+      85C56385C54C5C9C4C5C9C4C5C9C454574454574454574444E79444E79444E79
+      3F4B763F4B763F4B763F48723F48723F48723D446A3D446A3D446A3C40613C40
+      613C40613A3B593A3B593A3B5939364F39364F39364F37324737324737324736
+      304137314637314637314638364E38364E38364E393B57393B57393B573B3F5F
+      3B3F5F3B3F5F3C43663C43663C43663D466D3D466D3D466D4F70A74F70A74F70
+      A76698EC6698EC6698EC5D86DC5D86DC5D86DC4558B44558B44558B46C97DE6C
+      97DE6C97DE536EC0536EC0536EC0424076424076424076383968383968383968
+      3F49743F49743F49743E47703E47703E47703C43683C43683C43683B3F603B3F
+      603B3F603A3B573A3B573A3B5738364E38364E38364E37314537314537314536
+      2F3F37314637314637314638364E38364E38364E393B57393B57393B573B3F5F
+      3B3F5F3B3F5F3C43663C43663C43663D466D3D466D3D466D4F70A74F70A74F70
+      A76698EC6698EC6698EC5D86DC5D86DC5D86DC4558B44558B44558B46C97DE6C
+      97DE6C97DE536EC0536EC0536EC0424076424076424076383968383968383968
+      3F49743F49743F49743E47703E47703E47703C43683C43683C43683B3F603B3F
+      603B3F603A3B573A3B573A3B5738364E38364E38364E37314537314537314536
+      2F3F37314637314637314638364E38364E38364E393B57393B57393B573B3F5F
+      3B3F5F3B3F5F3C43663C43663C43663D466D3D466D3D466D4F70A74F70A74F70
+      A76698EC6698EC6698EC5D86DC5D86DC5D86DC4558B44558B44558B46C97DE6C
+      97DE6C97DE536EC0536EC0536EC0424076424076424076383968383968383968
+      3F49743F49743F49743E47703E47703E47703C43683C43683C43683B3F603B3F
+      603B3F603A3B573A3B573A3B5738364E38364E38364E37314537314537314536
+      2F3F36324536324536324538354D38354D38354D3939553939553939553A3D5C
+      3A3D5C3A3D5C3A3F613A3F613A3F613D446A3D446A3D446A5E8CC65E8CC65E8C
+      C66798E46798E46798E46494E76494E76494E75372D25372D25372D26A93D96A
+      93D96A93D96287D76287D76287D74D55984D55984D5598352E59352E59352E59
+      3A3E723A3E723A3E723D456C3D456C3D456C3C42643C42643C42643B3E5D3B3E
+      5D3B3E5D39395539395539395538354C38354C38354C37314337314337314336
+      2E3D36324536324536324538354D38354D38354D3939553939553939553A3D5C
+      3A3D5C3A3D5C3A3F613A3F613A3F613D446A3D446A3D446A5E8CC65E8CC65E8C
+      C66798E46798E46798E46494E76494E76494E75372D25372D25372D26A93D96A
+      93D96A93D96287D76287D76287D74D55984D55984D5598352E59352E59352E59
+      3A3E723A3E723A3E723D456C3D456C3D456C3C42643C42643C42643B3E5D3B3E
+      5D3B3E5D39395539395539395538354C38354C38354C37314337314337314336
+      2E3D36324536324536324538354D38354D38354D3939553939553939553A3D5C
+      3A3D5C3A3D5C3A3F613A3F613A3F613D446A3D446A3D446A5E8CC65E8CC65E8C
+      C66798E46798E46798E46494E76494E76494E75372D25372D25372D26A93D96A
+      93D96A93D96287D76287D76287D74D55984D55984D5598352E59352E59352E59
+      3A3E723A3E723A3E723D456C3D456C3D456C3C42643C42643C42643B3E5D3B3E
+      5D3B3E5D39395539395539395538354C38354C38354C37314337314337314336
+      2E3D37304237304237304238344A38344A38344A3938513938513938513A3E5D
+      3A3E5D3A3E5D3134513134513134513C41653C41653C41654F729C4F729C4F72
+      9C29294329294329294342579E42579E42579E292A63292A63292A632B2A402B
+      2A402B2A4036396F36396F36396F43457F43457F43457F251A33251A33251A33
+      393C73393C73393C733D43673D43673D43673C40603C40603C40603A3B593A3B
+      593A3B59383751383751383751373349373349373349362F40362F40362F4036
+      2C3A37304237304237304238344A38344A38344A3938513938513938513A3E5D
+      3A3E5D3A3E5D3134513134513134513C41653C41653C41654F729C4F729C4F72
+      9C29294329294329294342579E42579E42579E292A63292A63292A632B2A402B
+      2A402B2A4036396F36396F36396F43457F43457F43457F251A33251A33251A33
+      393C73393C73393C733D43673D43673D43673C40603C40603C40603A3B593A3B
+      593A3B59383751383751383751373349373349373349362F40362F40362F4036
+      2C3A37304237304237304238344A38344A38344A3938513938513938513A3E5D
+      3A3E5D3A3E5D3134513134513134513C41653C41653C41654F729C4F729C4F72
+      9C29294329294329294342579E42579E42579E292A63292A63292A632B2A402B
+      2A402B2A4036396F36396F36396F43457F43457F43457F251A33251A33251A33
+      393C73393C73393C733D43673D43673D43673C40603C40603C40603A3B593A3B
+      593A3B59383751383751383751373349373349373349362F40362F40362F4036
+      2C3A362E3F362E3F362E3F36324736324736324739364E39364E39364E3B4260
+      3B42603B426029263A29263A29263A32304B32304B32304B5884B05884B05884
+      B073A5E373A5E373A5E37DB3F07DB3F07DB3F080B4E980B4E980B4E96182AE61
+      82AE6182AE3D456E3D456E3D456E3530563530563530561D0F121D0F121D0F12
+      3D3D5B3D3D5B3D3D5B3C40623C40623C40623A3C5B3A3C5B3A3C5B3939543939
+      5439395438354D38354D38354D373145373145373145362D3C362D3C362D3C34
+      2A37362E3F362E3F362E3F36324736324736324739364E39364E39364E3B4260
+      3B42603B426029263A29263A29263A32304B32304B32304B5884B05884B05884
+      B073A5E373A5E373A5E37DB3F07DB3F07DB3F080B4E980B4E980B4E96182AE61
+      82AE6182AE3D456E3D456E3D456E3530563530563530561D0F121D0F121D0F12
+      3D3D5B3D3D5B3D3D5B3C40623C40623C40623A3C5B3A3C5B3A3C5B3939543939
+      5439395438354D38354D38354D373145373145373145362D3C362D3C362D3C34
+      2A37362E3F362E3F362E3F36324736324736324739364E39364E39364E3B4260
+      3B42603B426029263A29263A29263A32304B32304B32304B5884B05884B05884
+      B073A5E373A5E373A5E37DB3F07DB3F07DB3F080B4E980B4E980B4E96182AE61
+      82AE6182AE3D456E3D456E3D456E3530563530563530561D0F121D0F121D0F12
+      3D3D5B3D3D5B3D3D5B3C40623C40623C40623A3C5B3A3C5B3A3C5B3939543939
+      5439395438354D38354D38354D373145373145373145362D3C362D3C362D3C34
+      2A37352C3A352C3A352C3A36304236304236304237334A37334A37334A455B7F
+      455B7F455B7F2825382825382825381E141F1E141F1E141F46659E46659E4665
+      9E5F89D65F89D65F89D682B9F282B9F282B9F284BAF084BAF084BAF072A0E172
+      A0E172A0E1556BAF556BAF556BAF2C212D2C212D2C212D1F10101F10101F1010
+      3432483432483432483B3C5B3B3C5B3B3C5B39395439395439395438364E3836
+      4E38364E373247373247373247362F40362F40362F40352B37352B37352B3733
+      2833352C3A352C3A352C3A36304236304236304237334A37334A37334A455B7F
+      455B7F455B7F2825382825382825381E141F1E141F1E141F46659E46659E4665
+      9E5F89D65F89D65F89D682B9F282B9F282B9F284BAF084BAF084BAF072A0E172
+      A0E172A0E1556BAF556BAF556BAF2C212D2C212D2C212D1F10101F10101F1010
+      3432483432483432483B3C5B3B3C5B3B3C5B39395439395439395438364E3836
+      4E38364E373247373247373247362F40362F40362F40352B37352B37352B3733
+      2833352C3A352C3A352C3A36304236304236304237334A37334A37334A455B7F
+      455B7F455B7F2825382825382825381E141F1E141F1E141F46659E46659E4665
+      9E5F89D65F89D65F89D682B9F282B9F282B9F284BAF084BAF084BAF072A0E172
+      A0E172A0E1556BAF556BAF556BAF2C212D2C212D2C212D1F10101F10101F1010
+      3432483432483432483B3C5B3B3C5B3B3C5B39395439395439395438364E3836
+      4E38364E373247373247373247362F40362F40362F40352B37352B37352B3733
+      2833342A36342A36342A36352D3D352D3D352D3D363143363143363143393A53
+      393A53393A533B50663B50663B5066180D11180D11180D111A11221A11221A11
+      2226244B26244B26244B2C2C422C2C422C2C4244507F44507F44507F566FB156
+      6FB1566FB14E5D9C4E5D9C4E5D9C291D26291D26291D26211111211111211111
+      2F28332F28332F283338385438385438385439364E39364E39364E3732483732
+      48373248362F41362F41362F41352C3A352C3A352C3A34283334283334283333
+      272F342A36342A36342A36352D3D352D3D352D3D363143363143363143393A53
+      393A53393A533B50663B50663B5066180D11180D11180D111A11221A11221A11
+      2226244B26244B26244B2C2C422C2C422C2C4244507F44507F44507F566FB156
+      6FB1566FB14E5D9C4E5D9C4E5D9C291D26291D26291D26211111211111211111
+      2F28332F28332F283338385438385438385439364E39364E39364E3732483732
+      48373248362F41362F41362F41352C3A352C3A352C3A34283334283334283333
+      272F342A36342A36342A36352D3D352D3D352D3D363143363143363143393A53
+      393A53393A533B50663B50663B5066180D11180D11180D111A11221A11221A11
+      2226244B26244B26244B2C2C422C2C422C2C4244507F44507F44507F566FB156
+      6FB1566FB14E5D9C4E5D9C4E5D9C291D26291D26291D26211111211111211111
+      2F28332F28332F283338385438385438385439364E39364E39364E3732483732
+      48373248362F41362F41362F41352C3A352C3A352C3A34283334283334283333
+      272F332832332832332832342B37342B37342B37362E3D362E3D362E3D363145
+      363145363145486385486385486385394C6D394C6D394C6D26202C26202C2620
+      2C2F2B342F2B342F2B34281C21281C21281C211D0F121D0F121D0F121F131C1F
+      131C1F131C211723211723211723312729312729312729291A1B291A1B291A1B
+      2A25342A25342A2534393A57393A57393A573732473732473732473630413630
+      41363041352D3B352D3B352D3B34293534293534293534272F34272F34272F33
+      262D332832332832332832342B37342B37342B37362E3D362E3D362E3D363145
+      363145363145486385486385486385394C6D394C6D394C6D26202C26202C2620
+      2C2F2B342F2B342F2B34281C21281C21281C211D0F121D0F121D0F121F131C1F
+      131C1F131C211723211723211723312729312729312729291A1B291A1B291A1B
+      2A25342A25342A2534393A57393A57393A573732473732473732473630413630
+      41363041352D3B352D3B352D3B34293534293534293534272F34272F34272F33
+      262D332832332832332832342B37342B37342B37362E3D362E3D362E3D363145
+      363145363145486385486385486385394C6D394C6D394C6D26202C26202C2620
+      2C2F2B342F2B342F2B34281C21281C21281C211D0F121D0F121D0F121F131C1F
+      131C1F131C211723211723211723312729312729312729291A1B291A1B291A1B
+      2A25342A25342A2534393A57393A57393A573732473732473732473630413630
+      41363041352D3B352D3B352D3B34293534293534293534272F34272F34272F33
+      262D33262D33262D33262D342832342832342832352B37352B37352B37362E3D
+      362E3D362E3D36304236304236304245648C45648C45648C2B283E2B283E2B28
+      3E3C3B4F3C3B4F3C3B4F454553454553454553291D23291D23291D232D20232D
+      20232D2023201315201315201315211415211415211415221517221517221517
+      322F46322F46322F46363145363145363145362F40362F40362F40352D3B352D
+      3B352D3B342A35342A35342A3534273034273034273033262C33262C33262C33
+      252B33262D33262D33262D342832342832342832352B37352B37352B37362E3D
+      362E3D362E3D36304236304236304245648C45648C45648C2B283E2B283E2B28
+      3E3C3B4F3C3B4F3C3B4F454553454553454553291D23291D23291D232D20232D
+      20232D2023201315201315201315211415211415211415221517221517221517
+      322F46322F46322F46363145363145363145362F40362F40362F40352D3B352D
+      3B352D3B342A35342A35342A3534273034273034273033262C33262C33262C33
+      252B33262D33262D33262D342832342832342832352B37352B37352B37362E3D
+      362E3D362E3D36304236304236304245648C45648C45648C2B283E2B283E2B28
+      3E3C3B4F3C3B4F3C3B4F454553454553454553291D23291D23291D232D20232D
+      20232D2023201315201315201315211415211415211415221517221517221517
+      322F46322F46322F46363145363145363145362F40362F40362F40352D3B352D
+      3B352D3B342A35342A35342A3534273034273034273033262C33262C33262C33
+      252B32252B32252B32252B33262D33262D33262D342832342832342832352A36
+      352A36352A36352C3A352C3A352C3A3836493836493836494360844360844360
+      842D30482D30482D3048332F40332F40332F403E3B4A3E3B4A3E3B4A3D373F3D
+      373F3D373F372D31372D31372D311F11121F11121F11122A25322A25322A2532
+      373246373246373246362E3D362E3D362E3D352B38352B38352B383429343429
+      3434293434273034273034273033262C33262C33262C32242A32242A32242A33
+      252A32252B32252B32252B33262D33262D33262D342832342832342832352A36
+      352A36352A36352C3A352C3A352C3A3836493836493836494360844360844360
+      842D30482D30482D3048332F40332F40332F403E3B4A3E3B4A3E3B4A3D373F3D
+      373F3D373F372D31372D31372D311F11121F11121F11122A25322A25322A2532
+      373246373246373246362E3D362E3D362E3D352B38352B38352B383429343429
+      3434293434273034273034273033262C33262C33262C32242A32242A32242A33
+      252A32252B32252B32252B33262D33262D33262D342832342832342832352A36
+      352A36352A36352C3A352C3A352C3A3836493836493836494360844360844360
+      842D30482D30482D3048332F40332F40332F403E3B4A3E3B4A3E3B4A3D373F3D
+      373F3D373F372D31372D31372D311F11121F11121F11122A25322A25322A2532
+      373246373246373246362E3D362E3D362E3D352B38352B38352B383429343429
+      3434293434273034273034273033262C33262C33262C32242A32242A32242A33
+      252A32242932242932242932252B32252B32252B33262D33262D33262D332730
+      332730332730342933342933342933352B37352B37352B37352D3C352D3C352D
+      3C455F82455F82455F822B2E442B2E442B2E44251A23251A23251A23291D2429
+      1D24291D2434292E34292E34292E2A1D242A1D242A1D24342D3E342D3E342D3E
+      362B39362B39362B39352B36352B36352B3634283234283234283234272E3427
+      2E34272E33262C33262C33262C33252A33252A33252A32242932242932242931
+      232832242932242932242932252B32252B32252B33262D33262D33262D332730
+      332730332730342933342933342933352B37352B37352B37352D3C352D3C352D
+      3C455F82455F82455F822B2E442B2E442B2E44251A23251A23251A23291D2429
+      1D24291D2434292E34292E34292E2A1D242A1D242A1D24342D3E342D3E342D3E
+      362B39362B39362B39352B36352B36352B3634283234283234283234272E3427
+      2E34272E33262C33262C33262C33252A33252A33252A32242932242932242931
+      232832242932242932242932252B32252B32252B33262D33262D33262D332730
+      332730332730342933342933342933352B37352B37352B37352D3C352D3C352D
+      3C455F82455F82455F822B2E442B2E442B2E44251A23251A23251A23291D2429
+      1D24291D2434292E34292E34292E2A1D242A1D242A1D24342D3E342D3E342D3E
+      362B39362B39362B39352B36352B36352B3634283234283234283234272E3427
+      2E34272E33262C33262C33262C33252A33252A33252A32242932242932242931
+      232830222630222630222632232932232932232933252B33252B33252B33252B
+      33252B33252B34262D34262D34262D33272F33272F33272F3428323428323428
+      323529343529343529343A3C513A3C513A3C51302B3F302B3F302B3F30293630
+      2936302936342D3C342D3C342D3C362B38362B38362B38352933352933352933
+      34283134283134283134272E34272E34272E33262D33262D33262D33252B3325
+      2B33252B33252A33252A33252A32242932242932242930222730222730222730
+      222630222630222630222632232932232932232933252B33252B33252B33252B
+      33252B33252B34262D34262D34262D33272F33272F33272F3428323428323428
+      323529343529343529343A3C513A3C513A3C51302B3F302B3F302B3F30293630
+      2936302936342D3C342D3C342D3C362B38362B38362B38352933352933352933
+      34283134283134283134272E34272E34272E33262D33262D33262D33252B3325
+      2B33252B33252A33252A33252A32242932242932242930222730222730222730
+      222630222630222630222632232932232932232933252B33252B33252B33252B
+      33252B33252B34262D34262D34262D33272F33272F33272F3428323428323428
+      323529343529343529343A3C513A3C513A3C51302B3F302B3F302B3F30293630
+      2936302936342D3C342D3C342D3C362B38362B38362B38352933352933352933
+      34283134283134283134272E34272E34272E33262D33262D33262D33252B3325
+      2B33252B33252A33252A33252A32242932242932242930222730222730222730
+      2226
+    }
+    Text = 'The file was saved'
+    TextFont.Color = clWhite
+    Title = 'OpenLoco Company Editor'
+    TitleFont.Color = clYellow
+    TitleFont.Style = [fsBold]
+    Visible = False
+    Left = 392
+    Top = 8
+  end
+  object timerNotification: TTimer
+    Enabled = False
+    Interval = 3000
+    OnTimer = timerNotificationTimer
+    Left = 328
+    Top = 32
+  end
+  object timerError: TTimer
+    Enabled = False
+    Interval = 5000
+    OnTimer = timerErrorTimer
+    Left = 328
+    Top = 88
+  end
+end

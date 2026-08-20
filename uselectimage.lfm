@@ -1,0 +1,237 @@
+object frmSelectImage: TfrmSelectImage
+  Left = 976
+  Height = 409
+  Top = 316
+  Width = 482
+  BorderStyle = bsSingle
+  Caption = 'Select image...'
+  ClientHeight = 409
+  ClientWidth = 482
+  Position = poOwnerFormCenter
+  LCLVersion = '4.8.0.0'
+  OnShow = FormShow
+  object GroupBox1: TGroupBox
+    Left = 112
+    Height = 152
+    Top = 8
+    Width = 97
+    Caption = 'Image preview'
+    ClientHeight = 132
+    ClientWidth = 93
+    TabOrder = 0
+    object imgLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Proportional = True
+    end
+    object imgSmall: TImage
+      Left = 16
+      Height = 24
+      Top = 96
+      Width = 24
+      Proportional = True
+    end
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 30
+    Top = 168
+    Width = 452
+    Caption = 'If the image has a higher resolution than expected, it will be resized to the correct size.'#13#10'The background is applied automatically to all images with transparent areas.'
+  end
+  object btnLoadImageLarge: TButton
+    Left = 240
+    Height = 25
+    Top = 24
+    Width = 228
+    Caption = 'Select large image'
+    TabOrder = 1
+    OnClick = btnLoadImageLargeClick
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 152
+    Top = 8
+    Width = 97
+    Caption = 'Background'
+    ClientHeight = 132
+    ClientWidth = 93
+    TabOrder = 2
+    object imgBgLarge: TImage
+      Left = 16
+      Height = 64
+      Top = 8
+      Width = 64
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B47726170686963C501000089504E47
+        0D0A1A0A0000000D4948445200000040000000400802000000250BE689000000
+        0774494D4507E9061B0B380D90BCEA73000000097048597300000EC300000EC3
+        01C76FA8640000000467414D410000B18F0BFC6105000001544944415478DAD5
+        91B14986411005A70F5323C1026C40303037146363C1064C0C2DE00F2D40106C
+        402BB01FFD3858B8775BC00DEC1DF3E65DB21C3F5FBFEAE1FF7C9CBEDB4EE169
+        6B114F3F3020E2E69EC8BA9BA215149E503AA672D4164FFB4234C702A797CFB6
+        5378DA5AC4D30F0C88B8B927B2EEA668058527948EA91CB5C5D3BE10CDB1C0EB
+        E37BDB293C6D2DE2E9070644DCDC13597753B482C2134AC7548EDAE2695F88E6
+        58E0E9EEADED149EB616F1F40303226EEE89ACBB295A41E109A5632A476DF1B4
+        2F44732CF070F3DC760A4F5B8B78FA81011137F744D6DD14ADA0F084D23195A3
+        B678DA17A23916B8BDBA6F3B85A7AD453CFDC080889B7B22EB6E8A56507842E9
+        98CA515B3CED0BD11C0B5C5D5CB79DC2D3D6229E7E6040C4CD3D917537452B28
+        3CA1744CE5A82D9EF685688E05CECF2EDB4EE1696B114F3F3020E2E69EC8BA9B
+        A215149EE8DA2D77F65496CE1F6D09496B3FFABFB60000000049454E44AE4260
+        82
+      }
+      Proportional = True
+    end
+    object imgBgSmall: TImage
+      Left = 16
+      Height = 24
+      Top = 96
+      Width = 24
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B477261706869630101000089504E47
+        0D0A1A0A0000000D49484452000000180000001808020000006F15AAAF000000
+        0774494D4507E9061B0C0C38786ACB22000000097048597300000EC300000EC3
+        01C76FA8640000000467414D410000B18F0BFC6105000000904944415478DAAD
+        8CB10902511404B79EEBE01A102E3037146363C1064C0C2DE0C22B40B004EBD2
+        E5C1F01393B7C2FBCB0C7C46CFF5FD97D3F7ADB717DE6615E5EB109EB0F0F01C
+        BA9F37BCCD2ACAD7213C61E1E13974393CF036AB285F87F0848587E7D069B9E2
+        6D5651BE0EE1090B0FCFA1FD7CC4DBACA27C1DC213161E9E43F3B4C3DBACA27C
+        1DC2471EF7D79F913F5ADE2B4F25285A1A0000000049454E44AE426082
+      }
+      Proportional = True
+    end
+  end
+  object btnLoadImageSmall: TButton
+    Left = 240
+    Height = 25
+    Top = 56
+    Width = 228
+    Caption = 'Select small image'
+    TabOrder = 3
+    OnClick = btnLoadImageSmallClick
+  end
+  object chkUseLargeForSmall: TCheckBox
+    Left = 240
+    Height = 19
+    Top = 88
+    Width = 228
+    AutoSize = False
+    Caption = 'Use same file for small image'
+    Checked = True
+    State = cbChecked
+    TabOrder = 4
+  end
+  object Label2: TLabel
+    Left = 240
+    Height = 15
+    Top = 112
+    Width = 79
+    Caption = 'Resize settings:'
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 296
+    Width = 467
+    Caption = 'Final image will be palette based. You can chose the method used to decrease the colors.'
+  end
+  object chkPalette: TRadioGroup
+    Left = 8
+    Height = 81
+    Top = 208
+    Width = 467
+    AutoFill = True
+    Caption = 'Color palette options'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 61
+    ClientWidth = 463
+    ItemIndex = 0
+    Items.Strings = (
+      'Error diffusion dithering (recommended)'
+      'Nearest color matching'
+      'None (nearest color match will be done on saving)'
+    )
+    TabOrder = 5
+  end
+  object btnOk: TButton
+    Left = 280
+    Height = 25
+    Top = 368
+    Width = 91
+    Anchors = [akRight, akBottom]
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 6
+    OnClick = btnOkClick
+  end
+  object btnCancel: TButton
+    Left = 384
+    Height = 25
+    Top = 368
+    Width = 84
+    Anchors = [akRight, akBottom]
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 7
+  end
+  object Bevel1: TBevel
+    Left = 0
+    Height = 11
+    Top = 348
+    Width = 482
+    Anchors = [akLeft, akRight, akBottom]
+    Shape = bsBottomLine
+  end
+  object selResize: TComboBox
+    Left = 240
+    Height = 23
+    Top = 132
+    Width = 228
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'Resize on long edge (no crop)'
+      'Resize on short edge (crop extra pixels)'
+    )
+    Style = csDropDownList
+    TabOrder = 8
+    Text = 'Resize on long edge (no crop)'
+  end
+  object selColorPalette: TComboBox
+    Left = 109
+    Height = 23
+    Top = 320
+    Width = 359
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'Default Palette'
+      'No Company Colors Palette'
+      'Just Company Colors Palette'
+    )
+    Style = csDropDownList
+    TabOrder = 9
+    Text = 'Default Palette'
+  end
+  object Label4: TLabel
+    Left = 11
+    Height = 15
+    Top = 325
+    Width = 83
+    Caption = 'Use this palette:'
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Filter = 'Graphic (*.png;*.bmp;*.jpeg;*.jpg;*.jpe;*.jfif;*.tif;*.tiff;*.gif;*.webp;*.jp2;*.jxl)|*.png;*.bmp;*.jpeg;*.jpg;*.jpe;*.jfif;*.tif;*.tiff;*.gif;*.webp;*.jp2;*.jxl;|PNG Files (*.png)|*.png|Bitmap Files (*.bmp)|*.bmp|JPEG Files (*.jpeg;*.jpg;*.jpe;*.jfif)|*.jpeg;*.jpg;*.jpe;*.jfif|Tagged Image File Format Files (*.tif;*.tiff)|*.tif;*.tiff|Graphics Interchange Format Files (*.gif)|*.gif|WebP Image (*.webp)|*.webp|JPEG 2000 Image (*.jp2)|*.jp2|JPEG XL Image (*.jxl)|*.jxl|All files (*.*)|*.*'
+    Left = 450
+    Top = 18
+  end
+end
