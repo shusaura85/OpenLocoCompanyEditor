@@ -89,7 +89,7 @@ LoadColorPalette;
 
 //Image := TBGRABitmap.Create(imgBgLarge.Picture.Bitmap);
 Image := TBGRABitmap.Create(in_file_large);
-Image.SaveToFile('prequantized_image.png');
+//Image.SaveToFile('prequantized_image.png');
 
 new_x := 0;
 new_y := 0;
