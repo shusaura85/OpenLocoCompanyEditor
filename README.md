@@ -2,13 +2,15 @@
 
 An editor to create and edit competitor objects for [OpenLoco](https://github.com/OpenLoco/OpenLoco) and Chris Sawyer's Locomotion.  
 
-<a href="screenshots/mainwindow.png"><img src="screenshots/mainwindow.png" /></a>
+<a href="screenshots/mainwindow.png"><img src="screenshots/mainwindow.jpg" /></a>
 
 ### Features
 
 * Create new competitor objects.  
 * Modify existing competitor objects.  
 * Automatically converts images to the correct color palette.  
+* Automatically resizes images with smaller or larger resolution.  
+* Automatically crops non-square images (if desired).  
 
 # 🚀 Installation
 1. Download the latest version from the [Releases page](https://github.com/shusaura85/OpenLocoCompanyEditor/releases).
