@@ -8,15 +8,15 @@ uses
   Classes, SysUtils, Dialogs, ExtCtrls, Graphics, DateUtils, StrUtils,
   baseConvert,
   { core library files }
-  LocoSawyer,
+  //LocoSawyer,
   LocoTypes,
   LocoObjectFile,
   LocoStringTable,
   LocoImageTable,
-  LocoObjectDefs,
+  //LocoObjectDefs,
   LocoObjectSprites,
-  LocoSprite,
-  LocoPng,
+  //LocoSprite,
+  //LocoPng,
   LocoCompetitorObjectFile { actual object code }
   ;
 
@@ -96,29 +96,18 @@ procedure LoadObject(filename: string);
 var obj: TLocoCompetitorObjectFile;
     obj_src: TLocoSourceGame;
     i: integer;
-    //enabled_emotions: integer;
-    s: string;
-    ms:TMemoryStream;
+    //s: string;
 begin
 obj := TLocoCompetitorObjectFile.LoadFromFile(filename);
 
 frmMain.edOwnerName.Text := Copy(obj.FirstNames[0].text, 2, Length(obj.FirstNames[0].text));
 frmMain.edCompanyName.Text := obj.LastNames[0].text;
 
-//frmMain.edChecksum.Text := IntToStr(ByteLength(obj.FirstNames[0].Text)) + ' / '+IntToStr(Length(obj.FirstNames[0].Text));
-//s := obj.FirstNames[0].text;    frmMain.edChecksum.Text := '';
-//for i:= 1 to Length(s) do frmMain.edChecksum.Text := frmMain.edChecksum.Text + ' ' + IntToStr(Ord(s[i]));
-
-//s := prefix_name_bytes;    frmMain.edChecksumHex.Text := '';
-//for i:= 1 to Length(s) do frmMain.edChecksumHex.Text := frmMain.edChecksumHex.Text + ' ' + IntToStr(Ord(s[i]));
-
 for i := 0 to High(obj.FirstNames) do
     frmMain.owner_names[ ord(obj.FirstNames[i].LanguageId) ] := Copy(obj.FirstNames[i].text, 2, Length(obj.FirstNames[i].text));
 
 for i := 0 to High(obj.LastNames) do
     frmMain.company_names[ ord(obj.LastNames[i].LanguageId) ] := obj.LastNames[i].text;
-
-//enabled_emotions := 1;   // neutral emotion must always be enabled
 
 { emotions }
 frmMain.chkEmotionHappy.Checked := obj.EmotionFlag[1];
@@ -129,15 +118,6 @@ frmMain.chkEmotionSurprised.Checked := obj.EmotionFlag[5];
 frmMain.chkEmotionScared.Checked := obj.EmotionFlag[6];
 frmMain.chkEmotionAngry.Checked := obj.EmotionFlag[7];
 frmMain.chkEmotionDisgusted.Checked := obj.EmotionFlag[8];
-
-//if frmMain.chkEmotionHappy.Checked then Inc(enabled_emotions);
-//if frmMain.chkEmotionWorried.Checked then Inc(enabled_emotions);
-//if frmMain.chkEmotionThinking.Checked then Inc(enabled_emotions);
-//if frmMain.chkEmotionDejected.Checked then Inc(enabled_emotions);
-//if frmMain.chkEmotionSurprised.Checked then Inc(enabled_emotions);
-//if frmMain.chkEmotionScared.Checked then Inc(enabled_emotions);
-//if frmMain.chkEmotionAngry.Checked then Inc(enabled_emotions);
-//if frmMain.chkEmotionDisgusted.Checked then Inc(enabled_emotions);
 
 { available name prefixes }
 frmMain.chkNamePrefix1.Checked := obj.AvailableNamePrefixFlag[0];
@@ -204,17 +184,6 @@ i := 0;
 // neutral emotion
 SetSpriteInForm(obj, 0, frmMain.imgNeutralSmall);
 SetSpriteInForm(obj, 1, frmMain.imgNeutralLarge);
-{ms:= TMemoryStream.Create;
-ExportElementToPNGStream(obj.ImageTable, 0, ms);
-ms.Position:= 0;
-frmMain.imgNeutralSmall.Picture.LoadFromStream(ms);
-ms.Free;
-
-ms:= TMemoryStream.Create;
-ExportElementToPNGStream(obj.ImageTable, 1, ms);
-ms.Position:= 0;
-frmMain.imgNeutralLarge.Picture.LoadFromStream(ms);
-ms.Free;  }
 
 i := i+2;
 
@@ -273,7 +242,6 @@ end;
 
 procedure SaveObject(filename: string);
 var obj:TLocoCompetitorObjectFile;
-    header:TObjectHeader;
     s: String;
     object_source: TLocoSourceGame;
     ownerName, companyName: array of TLocoStringEntry;
@@ -364,7 +332,6 @@ obj.LastNames := companyName;
 // emotions and sprites
 obj.EmotionFlag[0] := true;
 
-//SetLength(sprites.Elements, 2);
 SetSpriteFromForm(frmMain.imgNeutralSmall, sprites);
 SetSpriteFromForm(frmMain.imgNeutralLarge, sprites);
 

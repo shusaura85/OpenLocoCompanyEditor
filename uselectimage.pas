@@ -90,7 +90,6 @@ LoadColorPalette;
 
 //Image := TBGRABitmap.Create(imgBgLarge.Picture.Bitmap);
 Image := TBGRABitmap.Create(in_file_large);
-//Image.SaveToFile('prequantized_image.png');
 
 new_x := 0;
 new_y := 0;
@@ -130,8 +129,6 @@ if ar <> 1 then
 
 
 Image := Image.Resample(new_w, new_h, TResampleMode.rmFineResample);
-//Image.SaveToFile('resampled_image.png');
-
 
 if chkPalette.ItemIndex <> 2 then
    begin
@@ -139,8 +136,6 @@ if chkPalette.ItemIndex <> 2 then
    try
      if chkPalette.ItemIndex = 1 then Quantizer.ApplyDitheringInplace(TDitheringAlgorithm.daFloydSteinberg, Image)
                                  else Quantizer.ApplyDitheringInplace(TDitheringAlgorithm.daNearestNeighbor, Image);
-
-    // Image.SaveToFile('quantized_image.png');
    finally
      Quantizer.Free;
    end;
@@ -174,7 +169,6 @@ if chkUseLargeForSmall.Checked then in_file_small := in_file_large;
 
 //Image := TBGRABitmap.Create(imgBgLarge.Picture.Bitmap);
 Image := TBGRABitmap.Create(in_file_small);
-//Image.SaveToFile('prequantized_image.png');
 
 new_x := 0;
 new_y := 0;
@@ -214,7 +208,6 @@ if ar <> 1 then
 
 
 Image := Image.Resample(new_w, new_h, TResampleMode.rmFineResample);
-//Image.SaveToFile('resampled_image.png');
 
 
 if chkPalette.ItemIndex <> 2 then
@@ -223,8 +216,6 @@ if chkPalette.ItemIndex <> 2 then
    try
      if chkPalette.ItemIndex = 1 then Quantizer.ApplyDitheringInplace(TDitheringAlgorithm.daFloydSteinberg, Image)
                                  else Quantizer.ApplyDitheringInplace(TDitheringAlgorithm.daNearestNeighbor, Image);
-
-    // Image.SaveToFile('quantized_image.png');
    finally
      Quantizer.Free;
    end;
