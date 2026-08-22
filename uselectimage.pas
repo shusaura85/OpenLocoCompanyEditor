@@ -38,6 +38,7 @@ type
     procedure btnLoadImageLargeClick(Sender: TObject);
     procedure btnLoadImageSmallClick(Sender: TObject);
     procedure btnOkClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
   private
     Quantizer: TBGRAColorQuantizer;      { handles resize and color palette }
@@ -292,6 +293,12 @@ ProcessSmallImage;
 
 in_file_large := '';
 in_file_small := '';
+end;
+
+procedure TfrmSelectImage.FormCreate(Sender: TObject);
+begin
+imgBgLarge.Picture.LoadFromResourceName(HInstance, 'BGLARGE', TPortableNetworkGraphic);
+imgBgSmall.Picture.LoadFromResourceName(HInstance, 'BGSMALL', TPortableNetworkGraphic);
 end;
 
 

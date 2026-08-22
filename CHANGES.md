@@ -3,7 +3,8 @@
 [fix] Emotion checkboxes would not be visible when building on Linux
 [fix] An unnecessary image was saved when setting images to emotions
 [fix] Tab order of components was not in the correct order
-
+[fix] Tab order of components in select image window
+[change] Load default background images from resources
 
 
 ** Version 0.9

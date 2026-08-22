@@ -9,6 +9,7 @@ object frmSelectImage: TfrmSelectImage
   ClientWidth = 482
   Position = poOwnerFormCenter
   LCLVersion = '4.8.0.0'
+  OnCreate = FormCreate
   OnShow = FormShow
   object GroupBox1: TGroupBox
     Left = 112
@@ -18,7 +19,7 @@ object frmSelectImage: TfrmSelectImage
     Caption = 'Image preview'
     ClientHeight = 132
     ClientWidth = 93
-    TabOrder = 0
+    TabOrder = 1
     object imgLarge: TImage
       Left = 16
       Height = 64
@@ -47,7 +48,7 @@ object frmSelectImage: TfrmSelectImage
     Top = 24
     Width = 228
     Caption = 'Select large image'
-    TabOrder = 1
+    TabOrder = 2
     OnClick = btnLoadImageLargeClick
   end
   object GroupBox2: TGroupBox
@@ -58,30 +59,12 @@ object frmSelectImage: TfrmSelectImage
     Caption = 'Background'
     ClientHeight = 132
     ClientWidth = 93
-    TabOrder = 2
+    TabOrder = 0
     object imgBgLarge: TImage
       Left = 16
       Height = 64
       Top = 8
       Width = 64
-      Picture.Data = {
-        1754506F727461626C654E6574776F726B47726170686963C501000089504E47
-        0D0A1A0A0000000D4948445200000040000000400802000000250BE689000000
-        0774494D4507E9061B0B380D90BCEA73000000097048597300000EC300000EC3
-        01C76FA8640000000467414D410000B18F0BFC6105000001544944415478DAD5
-        91B14986411005A70F5323C1026C40303037146363C1064C0C2DE00F2D40106C
-        402BB01FFD3858B8775BC00DEC1DF3E65DB21C3F5FBFEAE1FF7C9CBEDB4EE169
-        6B114F3F3020E2E69EC8BA9BA215149E503AA672D4164FFB4234C702A797CFB6
-        5378DA5AC4D30F0C88B8B927B2EEA668058527948EA91CB5C5D3BE10CDB1C0EB
-        E37BDB293C6D2DE2E9070644DCDC13597753B482C2134AC7548EDAE2695F88E6
-        58E0E9EEADED149EB616F1F40303226EEE89ACBB295A41E109A5632A476DF1B4
-        2F44732CF070F3DC760A4F5B8B78FA81011137F744D6DD14ADA0F084D23195A3
-        B678DA17A23916B8BDBA6F3B85A7AD453CFDC080889B7B22EB6E8A56507842E9
-        98CA515B3CED0BD11C0B5C5D5CB79DC2D3D6229E7E6040C4CD3D917537452B28
-        3CA1744CE5A82D9EF685688E05CECF2EDB4EE1696B114F3F3020E2E69EC8BA9B
-        A215149EE8DA2D77F65496CE1F6D09496B3FFABFB60000000049454E44AE4260
-        82
-      }
       Proportional = True
     end
     object imgBgSmall: TImage
@@ -89,17 +72,6 @@ object frmSelectImage: TfrmSelectImage
       Height = 24
       Top = 96
       Width = 24
-      Picture.Data = {
-        1754506F727461626C654E6574776F726B477261706869630101000089504E47
-        0D0A1A0A0000000D49484452000000180000001808020000006F15AAAF000000
-        0774494D4507E9061B0C0C38786ACB22000000097048597300000EC300000EC3
-        01C76FA8640000000467414D410000B18F0BFC6105000000904944415478DAAD
-        8CB10902511404B79EEBE01A102E3037146363C1064C0C2DE0C22B40B004EBD2
-        E5C1F01393B7C2FBCB0C7C46CFF5FD97D3F7ADB717DE6615E5EB109EB0F0F01C
-        BA9F37BCCD2ACAD7213C61E1E13974393CF036AB285F87F0848587E7D069B9E2
-        6D5651BE0EE1090B0FCFA1FD7CC4DBACA27C1DC213161E9E43F3B4C3DBACA27C
-        1DC2471EF7D79F913F5ADE2B4F25285A1A0000000049454E44AE426082
-      }
       Proportional = True
     end
   end
@@ -159,7 +131,7 @@ object frmSelectImage: TfrmSelectImage
       'Nearest color matching'
       'None (nearest color match will be done on saving)'
     )
-    TabOrder = 5
+    TabOrder = 6
   end
   object btnOk: TButton
     Left = 280
@@ -170,7 +142,7 @@ object frmSelectImage: TfrmSelectImage
     Caption = 'OK'
     Default = True
     ModalResult = 1
-    TabOrder = 6
+    TabOrder = 8
     OnClick = btnOkClick
   end
   object btnCancel: TButton
@@ -181,7 +153,7 @@ object frmSelectImage: TfrmSelectImage
     Anchors = [akRight, akBottom]
     Caption = 'Cancel'
     ModalResult = 2
-    TabOrder = 7
+    TabOrder = 9
   end
   object Bevel1: TBevel
     Left = 0
@@ -203,7 +175,7 @@ object frmSelectImage: TfrmSelectImage
       'Resize on short edge (crop extra pixels)'
     )
     Style = csDropDownList
-    TabOrder = 8
+    TabOrder = 5
     Text = 'Resize on long edge (no crop)'
   end
   object selColorPalette: TComboBox
@@ -219,7 +191,7 @@ object frmSelectImage: TfrmSelectImage
       'Just Company Colors Palette'
     )
     Style = csDropDownList
-    TabOrder = 9
+    TabOrder = 7
     Text = 'Default Palette'
   end
   object Label4: TLabel

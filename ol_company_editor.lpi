@@ -15,10 +15,12 @@
         <TextDesc Value="Competitor object editor for Locomotion and OpenLoco"/>
       </XPManifest>
       <Icon Value="0"/>
-      <Resources Count="3">
+      <Resources Count="5">
         <Resource_0 FileName="palette\openloco.pal" Type="RCDATA" ResourceName="OPENLOCO"/>
         <Resource_1 FileName="palette\openloco_cc.pal" Type="RCDATA" ResourceName="OPENLOCO_CC"/>
         <Resource_2 FileName="palette\openloco_occ.pal" Type="RCDATA" ResourceName="OPENLOCO_OCC"/>
+        <Resource_3 FileName="img\bgLarge.png" Type="RCDATA" ResourceName="BGLARGE"/>
+        <Resource_4 FileName="img\bgSmall.png" Type="RCDATA" ResourceName="BGSMALL"/>
       </Resources>
     </General>
     <VersionInfo>
