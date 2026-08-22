@@ -86,3 +86,4 @@ modules/
 /lib
 /backup
 *.lps
+/dist
