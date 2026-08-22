@@ -80,3 +80,9 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+*.rsj
+*.ppu
+*.obj
+/lib
+/backup
+*.lps

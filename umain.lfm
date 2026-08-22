@@ -20,7 +20,7 @@ object frmMain: TfrmMain
     Width = 137
     ClientHeight = 124
     ClientWidth = 133
-    TabOrder = 0
+    TabOrder = 2
     object imgHappyLarge: TImage
       Left = 16
       Height = 64
@@ -35,16 +35,6 @@ object frmMain: TfrmMain
       Width = 24
       Proportional = True
     end
-    object chkEmotionHappy: TCheckBox
-      Left = 8
-      Height = 19
-      Top = -20
-      Width = 53
-      Caption = 'Happy'
-      Checked = True
-      State = cbChecked
-      TabOrder = 0
-    end
     object Button2: TButton
       Left = 10
       Height = 25
@@ -53,7 +43,7 @@ object frmMain: TfrmMain
       Align = alBottom
       BorderSpacing.Around = 10
       Caption = 'Select image...'
-      TabOrder = 1
+      TabOrder = 0
       OnClick = Button2Click
     end
   end
@@ -65,7 +55,7 @@ object frmMain: TfrmMain
     Caption = 'Owner'
     ClientHeight = 84
     ClientWidth = 564
-    TabOrder = 1
+    TabOrder = 0
     object imgNeutralLarge: TImage
       Left = 16
       Height = 64
@@ -94,7 +84,7 @@ object frmMain: TfrmMain
       Top = 47
       Width = 121
       Caption = 'Select image...'
-      TabOrder = 1
+      TabOrder = 2
       OnClick = Button1Click
     end
     object Button10: TButton
@@ -103,7 +93,7 @@ object frmMain: TfrmMain
       Top = 8
       Width = 27
       Caption = '...'
-      TabOrder = 2
+      TabOrder = 1
       OnClick = Button10Click
     end
     object chkUseDifferentLanguageNames: TCheckBox
@@ -127,7 +117,7 @@ object frmMain: TfrmMain
     Width = 137
     ClientHeight = 124
     ClientWidth = 133
-    TabOrder = 2
+    TabOrder = 4
     object imgWorriedLarge: TImage
       Left = 16
       Height = 64
@@ -142,16 +132,6 @@ object frmMain: TfrmMain
       Width = 24
       Proportional = True
     end
-    object chkEmotionWorried: TCheckBox
-      Left = 8
-      Height = 19
-      Top = -20
-      Width = 60
-      Caption = 'Worried'
-      Checked = True
-      State = cbChecked
-      TabOrder = 0
-    end
     object Button3: TButton
       Left = 10
       Height = 25
@@ -160,7 +140,7 @@ object frmMain: TfrmMain
       Align = alBottom
       BorderSpacing.Around = 10
       Caption = 'Select image...'
-      TabOrder = 1
+      TabOrder = 0
       OnClick = Button3Click
     end
   end
@@ -171,7 +151,7 @@ object frmMain: TfrmMain
     Width = 137
     ClientHeight = 124
     ClientWidth = 133
-    TabOrder = 3
+    TabOrder = 6
     object imgThinkingLarge: TImage
       Left = 16
       Height = 64
@@ -186,16 +166,6 @@ object frmMain: TfrmMain
       Width = 24
       Proportional = True
     end
-    object chkEmotionThinking: TCheckBox
-      Left = 8
-      Height = 19
-      Top = -20
-      Width = 64
-      Caption = 'Thinking'
-      Checked = True
-      State = cbChecked
-      TabOrder = 0
-    end
     object Button4: TButton
       Left = 10
       Height = 25
@@ -204,7 +174,7 @@ object frmMain: TfrmMain
       Align = alBottom
       BorderSpacing.Around = 10
       Caption = 'Select image...'
-      TabOrder = 1
+      TabOrder = 0
       OnClick = Button4Click
     end
   end
@@ -215,7 +185,7 @@ object frmMain: TfrmMain
     Width = 137
     ClientHeight = 124
     ClientWidth = 133
-    TabOrder = 4
+    TabOrder = 8
     object imgDejectedLarge: TImage
       Left = 16
       Height = 64
@@ -230,16 +200,6 @@ object frmMain: TfrmMain
       Width = 24
       Proportional = True
     end
-    object chkEmotionDejected: TCheckBox
-      Left = 8
-      Height = 19
-      Top = -20
-      Width = 64
-      Caption = 'Dejected'
-      Checked = True
-      State = cbChecked
-      TabOrder = 0
-    end
     object Button5: TButton
       Left = 10
       Height = 25
@@ -248,7 +208,7 @@ object frmMain: TfrmMain
       Align = alBottom
       BorderSpacing.Around = 10
       Caption = 'Select image...'
-      TabOrder = 1
+      TabOrder = 0
       OnClick = Button5Click
     end
   end
@@ -259,7 +219,7 @@ object frmMain: TfrmMain
     Width = 137
     ClientHeight = 124
     ClientWidth = 133
-    TabOrder = 5
+    TabOrder = 10
     object imgSurprisedLarge: TImage
       Left = 16
       Height = 64
@@ -274,16 +234,6 @@ object frmMain: TfrmMain
       Width = 24
       Proportional = True
     end
-    object chkEmotionSurprised: TCheckBox
-      Left = 8
-      Height = 19
-      Top = -20
-      Width = 67
-      Caption = 'Surprised'
-      Checked = True
-      State = cbChecked
-      TabOrder = 0
-    end
     object Button6: TButton
       Left = 10
       Height = 25
@@ -292,7 +242,7 @@ object frmMain: TfrmMain
       Align = alBottom
       BorderSpacing.Around = 10
       Caption = 'Select image...'
-      TabOrder = 1
+      TabOrder = 0
       OnClick = Button6Click
     end
   end
@@ -303,7 +253,7 @@ object frmMain: TfrmMain
     Width = 137
     ClientHeight = 124
     ClientWidth = 133
-    TabOrder = 6
+    TabOrder = 12
     object imgScaredLarge: TImage
       Left = 16
       Height = 64
@@ -318,16 +268,6 @@ object frmMain: TfrmMain
       Width = 24
       Proportional = True
     end
-    object chkEmotionScared: TCheckBox
-      Left = 8
-      Height = 19
-      Top = -20
-      Width = 53
-      Caption = 'Scared'
-      Checked = True
-      State = cbChecked
-      TabOrder = 0
-    end
     object Button7: TButton
       Left = 10
       Height = 25
@@ -336,7 +276,7 @@ object frmMain: TfrmMain
       Align = alBottom
       BorderSpacing.Around = 10
       Caption = 'Select image...'
-      TabOrder = 1
+      TabOrder = 0
       OnClick = Button7Click
     end
   end
@@ -347,7 +287,7 @@ object frmMain: TfrmMain
     Width = 137
     ClientHeight = 124
     ClientWidth = 133
-    TabOrder = 7
+    TabOrder = 14
     object imgAngryLarge: TImage
       Left = 16
       Height = 64
@@ -362,16 +302,6 @@ object frmMain: TfrmMain
       Width = 24
       Proportional = True
     end
-    object chkEmotionAngry: TCheckBox
-      Left = 8
-      Height = 19
-      Top = -20
-      Width = 50
-      Caption = 'Angry'
-      Checked = True
-      State = cbChecked
-      TabOrder = 0
-    end
     object Button8: TButton
       Left = 10
       Height = 25
@@ -380,7 +310,7 @@ object frmMain: TfrmMain
       Align = alBottom
       BorderSpacing.Around = 10
       Caption = 'Select image...'
-      TabOrder = 1
+      TabOrder = 0
       OnClick = Button8Click
     end
   end
@@ -391,7 +321,7 @@ object frmMain: TfrmMain
     Width = 137
     ClientHeight = 124
     ClientWidth = 133
-    TabOrder = 8
+    TabOrder = 16
     object imgDisgustedLarge: TImage
       Left = 16
       Height = 64
@@ -406,16 +336,6 @@ object frmMain: TfrmMain
       Width = 24
       Proportional = True
     end
-    object chkEmotionDisgusted: TCheckBox
-      Left = 8
-      Height = 19
-      Top = -20
-      Width = 70
-      Caption = 'Disgusted'
-      Checked = True
-      State = cbChecked
-      TabOrder = 0
-    end
     object Button9: TButton
       Left = 10
       Height = 25
@@ -424,7 +344,7 @@ object frmMain: TfrmMain
       Align = alBottom
       BorderSpacing.Around = 10
       Caption = 'Select image...'
-      TabOrder = 1
+      TabOrder = 0
       OnClick = Button9Click
     end
   end
@@ -436,7 +356,7 @@ object frmMain: TfrmMain
     Caption = 'Company name'
     ClientHeight = 404
     ClientWidth = 188
-    TabOrder = 9
+    TabOrder = 17
     object chkNamePrefix1: TCheckBox
       Left = 5
       Height = 19
@@ -487,7 +407,7 @@ object frmMain: TfrmMain
       Caption = 'Sapphire'
       Checked = True
       State = cbChecked
-      TabOrder = 3
+      TabOrder = 4
     end
     object chkNamePrefix6: TCheckBox
       Left = 5
@@ -500,7 +420,7 @@ object frmMain: TfrmMain
       Caption = 'Emerald'
       Checked = True
       State = cbChecked
-      TabOrder = 4
+      TabOrder = 5
     end
     object chkNamePrefix7: TCheckBox
       Left = 5
@@ -513,7 +433,7 @@ object frmMain: TfrmMain
       Caption = 'Golden'
       Checked = True
       State = cbChecked
-      TabOrder = 5
+      TabOrder = 6
     end
     object chkNamePrefix8: TCheckBox
       Left = 5
@@ -526,7 +446,7 @@ object frmMain: TfrmMain
       Caption = 'Amber'
       Checked = True
       State = cbChecked
-      TabOrder = 6
+      TabOrder = 7
     end
     object chkNamePrefix13: TCheckBox
       Left = 5
@@ -541,11 +461,12 @@ object frmMain: TfrmMain
       Font.Style = [fsItalic]
       ParentFont = False
       State = cbChecked
-      TabOrder = 7
+      TabOrder = 12
     end
     object chkNamePrefix12: TCheckBox
       Left = 5
       Height = 19
+      Hint = 'This competitor will use the name of the town where it starts building.'
       Top = 269
       Width = 178
       Align = alTop
@@ -555,8 +476,10 @@ object frmMain: TfrmMain
       Checked = True
       Font.Style = [fsItalic]
       ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
       State = cbChecked
-      TabOrder = 8
+      TabOrder = 11
     end
     object chkNamePrefix11: TCheckBox
       Left = 5
@@ -569,7 +492,7 @@ object frmMain: TfrmMain
       Caption = 'Scarlet'
       Checked = True
       State = cbChecked
-      TabOrder = 9
+      TabOrder = 10
     end
     object chkNamePrefix10: TCheckBox
       Left = 5
@@ -582,7 +505,7 @@ object frmMain: TfrmMain
       Caption = 'Burgundy'
       Checked = True
       State = cbChecked
-      TabOrder = 10
+      TabOrder = 9
     end
     object chkNamePrefix9: TCheckBox
       Left = 5
@@ -595,7 +518,7 @@ object frmMain: TfrmMain
       Caption = 'Bronze'
       Checked = True
       State = cbChecked
-      TabOrder = 11
+      TabOrder = 8
     end
     object chkNamePrefix4: TCheckBox
       Left = 5
@@ -608,7 +531,7 @@ object frmMain: TfrmMain
       Caption = 'Indigo'
       Checked = True
       State = cbChecked
-      TabOrder = 12
+      TabOrder = 3
     end
     object edCompanyName: TEdit
       Left = 21
@@ -654,7 +577,7 @@ object frmMain: TfrmMain
     Caption = 'Company name suffix'
     ClientHeight = 404
     ClientWidth = 188
-    TabOrder = 10
+    TabOrder = 18
     object chkNameSuffix1: TCheckBox
       Left = 5
       Height = 19
@@ -705,7 +628,7 @@ object frmMain: TfrmMain
       Caption = 'Coaches'
       Checked = True
       State = cbChecked
-      TabOrder = 3
+      TabOrder = 4
     end
     object chkNameSuffix6: TCheckBox
       Left = 5
@@ -718,7 +641,7 @@ object frmMain: TfrmMain
       Caption = 'Air'
       Checked = True
       State = cbChecked
-      TabOrder = 4
+      TabOrder = 5
     end
     object chkNameSuffix7: TCheckBox
       Left = 5
@@ -731,7 +654,7 @@ object frmMain: TfrmMain
       Caption = 'Rail'
       Checked = True
       State = cbChecked
-      TabOrder = 5
+      TabOrder = 6
     end
     object chkNameSuffix8: TCheckBox
       Left = 5
@@ -744,7 +667,7 @@ object frmMain: TfrmMain
       Caption = 'Carts'
       Checked = True
       State = cbChecked
-      TabOrder = 6
+      TabOrder = 7
     end
     object chkNameSuffix13: TCheckBox
       Left = 5
@@ -757,7 +680,7 @@ object frmMain: TfrmMain
       Caption = 'Trucks'
       Checked = True
       State = cbChecked
-      TabOrder = 7
+      TabOrder = 12
     end
     object chkNameSuffix12: TCheckBox
       Left = 5
@@ -770,7 +693,7 @@ object frmMain: TfrmMain
       Caption = 'Freight'
       Checked = True
       State = cbChecked
-      TabOrder = 8
+      TabOrder = 11
     end
     object chkNameSuffix11: TCheckBox
       Left = 5
@@ -783,7 +706,7 @@ object frmMain: TfrmMain
       Caption = 'Shipping'
       Checked = True
       State = cbChecked
-      TabOrder = 9
+      TabOrder = 10
     end
     object chkNameSuffix10: TCheckBox
       Left = 5
@@ -796,7 +719,7 @@ object frmMain: TfrmMain
       Caption = 'Haulage'
       Checked = True
       State = cbChecked
-      TabOrder = 10
+      TabOrder = 9
     end
     object chkNameSuffix9: TCheckBox
       Left = 5
@@ -809,7 +732,7 @@ object frmMain: TfrmMain
       Caption = 'Trains'
       Checked = True
       State = cbChecked
-      TabOrder = 11
+      TabOrder = 8
     end
     object chkNameSuffix4: TCheckBox
       Left = 5
@@ -822,7 +745,7 @@ object frmMain: TfrmMain
       Caption = 'Tracks'
       Checked = True
       State = cbChecked
-      TabOrder = 12
+      TabOrder = 3
     end
     object Button12: TButton
       Left = 10
@@ -844,7 +767,7 @@ object frmMain: TfrmMain
     Caption = 'Competitor Specifications'
     ClientHeight = 220
     ClientWidth = 268
-    TabOrder = 11
+    TabOrder = 19
     object tbIntelligence: TTrackBar
       Left = 12
       Height = 40
@@ -954,7 +877,7 @@ object frmMain: TfrmMain
     Font.Style = [fsBold]
     MaxLength = 8
     ParentFont = False
-    TabOrder = 12
+    TabOrder = 20
   end
   object Label8: TLabel
     Left = 1000
@@ -978,7 +901,7 @@ object frmMain: TfrmMain
       'Vanilla'
     )
     Style = csDropDownList
-    TabOrder = 13
+    TabOrder = 21
     Text = 'Custom'
   end
   object Label10: TLabel
@@ -994,7 +917,7 @@ object frmMain: TfrmMain
     Top = 409
     Width = 125
     ReadOnly = True
-    TabOrder = 14
+    TabOrder = 22
   end
   object Label11: TLabel
     Left = 1000
@@ -1009,7 +932,7 @@ object frmMain: TfrmMain
     Top = 409
     Width = 125
     ReadOnly = True
-    TabOrder = 15
+    TabOrder = 23
   end
   object Label12: TLabel
     Left = 1136
@@ -1017,6 +940,86 @@ object frmMain: TfrmMain
     Top = 392
     Width = 84
     Caption = 'Checksum HEX:'
+  end
+  object chkEmotionHappy: TCheckBox
+    Left = 24
+    Height = 19
+    Top = 128
+    Width = 53
+    Caption = 'Happy'
+    Checked = True
+    State = cbChecked
+    TabOrder = 1
+  end
+  object chkEmotionWorried: TCheckBox
+    Left = 168
+    Height = 19
+    Top = 128
+    Width = 60
+    Caption = 'Worried'
+    Checked = True
+    State = cbChecked
+    TabOrder = 3
+  end
+  object chkEmotionThinking: TCheckBox
+    Left = 312
+    Height = 19
+    Top = 128
+    Width = 64
+    Caption = 'Thinking'
+    Checked = True
+    State = cbChecked
+    TabOrder = 5
+  end
+  object chkEmotionDejected: TCheckBox
+    Left = 456
+    Height = 19
+    Top = 128
+    Width = 64
+    Caption = 'Dejected'
+    Checked = True
+    State = cbChecked
+    TabOrder = 7
+  end
+  object chkEmotionSurprised: TCheckBox
+    Left = 24
+    Height = 19
+    Top = 288
+    Width = 67
+    Caption = 'Surprised'
+    Checked = True
+    State = cbChecked
+    TabOrder = 9
+  end
+  object chkEmotionScared: TCheckBox
+    Left = 168
+    Height = 19
+    Top = 288
+    Width = 53
+    Caption = 'Scared'
+    Checked = True
+    State = cbChecked
+    TabOrder = 11
+  end
+  object chkEmotionAngry: TCheckBox
+    Left = 312
+    Height = 19
+    Top = 288
+    Width = 50
+    Caption = 'Angry'
+    Checked = True
+    State = cbChecked
+    TabOrder = 13
+  end
+  object chkEmotionDisgusted: TCheckBox
+    Left = 456
+    Height = 19
+    Top = 288
+    Width = 70
+    Caption = 'Disgusted'
+    Checked = True
+    State = cbChecked
+    TabOrder = 15
   end
   object MainMenu1: TMainMenu
     Images = ImageList1
