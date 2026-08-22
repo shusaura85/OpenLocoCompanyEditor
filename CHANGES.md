@@ -1,4 +1,4 @@
-** Version 0.9+
+** Version 0.9.2
 ================
 [fix] Emotion checkboxes would not be visible when building on Linux
 [fix] An unnecessary image was saved when setting images to emotions
