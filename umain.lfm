@@ -1026,7 +1026,7 @@ object frmMain: TfrmMain
     Left = 72
     object MenuItem1: TMenuItem
       AutoCheck = True
-      Caption = 'File'
+      Caption = '&File'
       object MenuItem2: TMenuItem
         Caption = '&New'
         ImageIndex = 1
