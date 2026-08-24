@@ -25,8 +25,8 @@
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
-      <MinorVersionNr Value="9"/>
-      <StringTable Comments="Competitor/Company Editor for Locomotion and OpenLoco" CompanyName="Shu Saura" FileDescription="Company Editor for Locomotion and OpenLoco" InternalName="openloco_company_editor" LegalCopyright="Copyright © 2026 Shu Saura" OriginalFilename="openloco_company_editor.exe" ProductName="OpenLoco Company Editor" ProductVersion="0.9"/>
+      <MajorVersionNr Value="1"/>
+      <StringTable Comments="Competitor/Company Editor for Locomotion and OpenLoco" CompanyName="Shu Saura" FileDescription="Company Editor for Locomotion and OpenLoco" InternalName="openloco_company_editor" LegalCopyright="Copyright © 2026 Shu Saura" OriginalFilename="openloco_company_editor.exe" ProductName="OpenLoco Company Editor" ProductVersion="1.0"/>
     </VersionInfo>
     <BuildModes>
       <Item Name="Default" Default="True"/>
