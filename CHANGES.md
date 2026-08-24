@@ -1,3 +1,14 @@
+** Version 1.0
+================
+[new] Background image can now be changed
+[new] Reset background images to the default ones
+[new] Final image preview based on selected options before actually saving it
+[change] Palette reduction changed to dropdown from radio boxes
+[change] Any option changes will instantly update the final image preview
+[fix] Error diffusion and nearest color options were mixed up
+[fix] File main menu item didn't have key shortcut hint
+
+
 ** Version 0.9.2
 ================
 [fix] Emotion checkboxes would not be visible when building on Linux
