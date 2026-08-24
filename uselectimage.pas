@@ -397,6 +397,9 @@ var Image: TBGRABitmap;
     new_x, new_y, new_w, new_h: integer;
     ar: Double;
 begin
+// use large file if checked
+if chkUseLargeForSmall.Checked then in_file_small := in_file_large;
+
 // check if image was loaded
 if in_file_small = '' then exit;
 
@@ -405,10 +408,6 @@ ProcessSmallBgImage;
 
 // load color palette
 LoadColorPalette;
-
-// use large file if checked
-if chkUseLargeForSmall.Checked then in_file_small := in_file_large;
-
 
 //Image := TBGRABitmap.Create(imgBgLarge.Picture.Bitmap);
 Image := TBGRABitmap.Create(in_file_small);
