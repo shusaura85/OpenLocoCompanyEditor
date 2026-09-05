@@ -210,8 +210,6 @@ Image.Free;
 
 imgBgLarge.Picture.Assign(img);
 
-img.Free;
-
 if in_file_large = '' then imgLarge.Picture.Assign(imgBgLarge.Picture);
 end;
 
@@ -297,8 +295,6 @@ img.PutImage(new_x, new_y, Image, dmDrawWithTransparency);
 Image.Free;
 
 imgBgSmall.Picture.Assign(img);
-
-img.Free;
 
 if in_file_small = '' then imgSmall.Picture.Assign(imgBgSmall.Picture);
 end;
@@ -389,7 +385,6 @@ Image.Free;
 
 imgLarge.Picture.Assign(img);
 
-img.Free;
 end;
 
 procedure TfrmSelectImage.ProcessSmallImage;
@@ -477,7 +472,6 @@ Image.Free;
 
 imgSmall.Picture.Assign(img);
 
-img.Free;
 end;
 
 
