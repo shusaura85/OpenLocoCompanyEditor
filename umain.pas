@@ -173,7 +173,7 @@ const spriteSizeLarge = 64;
       sSpecMid = 'Medium';
       sSpecHigh = 'High';
 
-      CE_Version = '1.0';   // application version - shown in about
+      CE_Version = '1.0.1';   // application version - shown in about
 
 var
   frmMain: TfrmMain;
